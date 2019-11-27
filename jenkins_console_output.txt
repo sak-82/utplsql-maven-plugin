@@ -1,0 +1,1771 @@
+Started by user Ashokkumar SUNDARAKANDASAMY
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on windows-5 (windows-x64 windows.server.2012.R2 com.testcomp.jenkins.TTT.slave) in workspace D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is disabled by the node property...
+[WS-CLEANUP] Done
+[testcomp] Project trigram: myAPP
+[testcomp] Project criticality: C2
+[testcomp] Project owner location: myCNT
+Cleaning local Directory .
+Checking out https://bsv-testcomp.net.url.com/svn/myAPP/Clover/SQL/branches/myAPP.SQL-2.17 at revision '2019-11-27T11:13:59.079 +0100' --quiet
+Using sole credentials CI_myAPP/****** (Continuous Integration User for myAPP) in realm �<https://bsv-testcomp.net.url.com:443> myCOMP Paribas Securities Services SSO�
+At revision 12458
+
+Using sole credentials CI_myAPP/****** (Continuous Integration User for myAPP) in realm �<https://bsv-testcomp.net.url.com:443> myCOMP Paribas Securities Services SSO�
+using global settings config with name testcomp Global Maven Settings
+Replacing all maven server entries not found in credentials list is true
+Could not find credentials �testcomp-TTT-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-TTT-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-ccs-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-ccs-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-coo-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-coo-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-cts-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-cts-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-mfs-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-mfs-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-coo-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+Could not find credentials �testcomp-coo-myREPO-deployment� for TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK #227
+[TTT_myAPP_SQL_UTPLSQL_CHECK] $ cmd.exe /C "D:\tools\maven\3.6.0\bin\mvn.bat -gs C:\TEMP\global-settings7653176691186169200.xml -PutPLSQL-maven clean insmyAPPl validate utplsql:test -Dutplsql.user=myAPP -Dutplsql.password=myAPP123# -Dutplsql.url=jdbc:oracle:thin:@testcompx01.net.com:1521:DTEST11 -X && exit %%ERRORLEVEL%%"
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00)
+Maven home: D:\tools\maven\3.6.0\bin\..
+Java version: 1.8.0_66, vendor: Oracle Corporation, runtime: D:\tools\java\1.8-66\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows server 2012 r2", version: "6.3", arch: "amd64", family: "windows"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.insmyAPPlation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from C:\TEMP\global-settings7653176691186169200.xml
+[DEBUG] Reading user settings from C:\Users\admintestcomp\.m2\settings.xml
+[DEBUG] Reading global toolchains from D:\tools\maven\3.6.0\bin\..\conf\toolchains.xml
+[DEBUG] Reading user toolchains from C:\Users\admintestcomp\.m2\toolchains.xml
+[DEBUG] Using local repository at D:\apps\jenkins\slave-prd-05\maven-repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for D:\apps\jenkins\slave-prd-05\maven-repository
+[INFO] Scanning for projects...
+[DEBUG] Using mirror testcomp-release (http://myREPO-testcomp.net.url.com/content/groups/public/) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Extension realms for project com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix utplsql from [com.myCOMP.frmk.mojo.util, com.atlassian.maven.plugins, org.jenkins-ci.tools, org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Could not find metadata org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT/maven-metadata.xml in local (D:\apps\jenkins\slave-prd-05\maven-repository)
+[DEBUG] Skipped remote request for org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Could not find metadata org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT/maven-metadata.xml in local (D:\apps\jenkins\slave-prd-05\maven-repository)
+[DEBUG] Skipped remote request for org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Could not find metadata org.utplsql:utplsql-maven-plugin-parent:3.1.0-SNAPSHOT/maven-metadata.xml in local (D:\apps\jenkins\slave-prd-05\maven-repository)
+[DEBUG] Skipped remote request for org.utplsql:utplsql-maven-plugin-parent:3.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Failure to find org.utplsql:utplsql-maven-plugin-parent:3.1.0-SNAPSHOT/maven-metadata.xml in http://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-releases was cached in the local repository, resolution will not be reattempted until the update interval of testcomp-TTT-release has elapsed or updates are forced
+[DEBUG] Resolved plugin prefix utplsql to org.utplsql:utplsql-maven-plugin from POM com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, insmyAPPl, validate, utplsql:test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] -------------------< com.testcomp.utplsql:utplsql-test >--------------------
+[INFO] Building utplsql-test 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Resolving plugin prefix utplsql from [com.myCOMP.frmk.mojo.util, com.atlassian.maven.plugins, org.jenkins-ci.tools, org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix utplsql to org.utplsql:utplsql-maven-plugin from POM com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, insmyAPPl, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [testcomp-release (http://myREPO-testcomp.net.url.com/content/groups/public/, default, releases+snapshots), testcomp-snapshot (http://myREPO-testcomp.net.url.com/content/groups/public-snapshots/, default, releases+snapshots), testcomp-public-releases (http://myREPO-testcomp.net.url.com/content/groups/testcomp-public-releases, default, releases), testcomp-public-snapshots (http://myREPO-testcomp.net.url.com/content/groups/testcomp-public-snapshots, default, snapshots), testcomp-coo-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-coo-releases/, default, releases), testcomp-coo-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-coo-snapshots/, default, snapshots), testcomp-TTT-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-releases/, default, releases), testcomp-TTT-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-snapshots/, default, snapshots), testcomp-ccs-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-ccs-releases/, default, releases), testcomp-ccs-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-ccs-snapshots/, default, snapshots), testcomp-clc-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-clc-releases/, default, releases), testcomp-clc-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-clc-snapshots/, default, snapshots), testcomp-cro-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-cro-releases/, default, releases), testcomp-cro-snapshots1 (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-cro-snapshots/, default, snapshots), testcomp-cts-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-cts-releases/, default, releases), testcomp-cts-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-cts-snapshots/, default, snapshots), testcomp-mfs-releases (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-mfs-releases/, default, releases), testcomp-mfs-snapshots (http://myREPO-testcomp.net.url.com/content/repositories/testcomp-mfs-snapshots/, default, snapshots), utplsql-java-api (https://packagecloud.io/utplsql/utplsql-java-api/maven2, default, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [testcomp-TTT-releases (https://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-releases/, default, releases), testcomp-TTT-snapshots (https://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-snapshots/, default, snapshots), testcomp-release (http://myREPO-testcomp.net.url.com/content/groups/public/, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:properties-maven-plugin:1.0.0:read-project-properties (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <files>
+    <file>sonar-project.properties</file>
+  </files>
+  <project default-value="${project}"/>
+  <quiet default-value="false"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <smyAPPeMillis default-value="0">${lastModGranularityMs}</smyAPPeMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncremenmyAPPCompilation default-value="true">${maven.compiler.useIncremenmyAPPCompilation}</useIncremenmyAPPCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <smyAPPeMillis default-value="0">${lastModGranularityMs}</smyAPPeMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncremenmyAPPCompilation default-value="true">${maven.compiler.useIncremenmyAPPCompilation}</useIncremenmyAPPCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4:insmyAPPl (default-insmyAPPl)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.insmyAPPl.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT:test (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <ignoreFailure default-value="${maven.test.failure.ignore}">true</ignoreFailure>
+  <password>myAPP123#</password>
+  <paths>
+    <path>myAPP</path>
+  </paths>
+  <project default-value="${project}"/>
+  <reporters>
+    <reporter>
+      <name>UT_SONAR_TEST_REPORTER</name>
+      <fileOutput>utplsql/sonar-test-reporter.xml</fileOutput>
+      <consoleOutput>true</consoleOutput>
+    </reporter>
+    <reporter>
+      <name>UT_COVERAGE_SONAR_REPORTER</name>
+      <fileOutput>utplsql/coverage-sonar-reporter.xml</fileOutput>
+      <consoleOutput>true</consoleOutput>
+    </reporter>
+    <reporter>
+      <name>UT_COVERAGE_HTML_REPORTER</name>
+      <fileOutput>utplsql/coverage-html-reporter.html</fileOutput>
+      <consoleOutput>true</consoleOutput>
+    </reporter>
+  </reporters>
+  <skipCompatibilityCheck default-value="false"/>
+  <sources>
+    <source>
+      <directory>src/myAPP</directory>
+      <includes>
+        <include>**/*.pkg</include>
+        <include>**/*.pkb</include>
+        <include>**/*.fnc</include>
+        <include>packages/*.sql</include>
+        <include>packages/*.SQL</include>
+      </includes>
+    </source>
+  </sources>
+  <sourcesCustomTypeMapping>
+    <customTypeMapping>
+      <type>PACKAGE BODY</type>
+      <customMapping>packages</customMapping>
+    </customTypeMapping>
+  </sourcesCustomTypeMapping>
+  <sourcesNameSubexpression>2</sourcesNameSubexpression>
+  <sourcesOwner>myAPP</sourcesOwner>
+  <sourcesRegexExpression>/(\w+)/(\w+)/(\w+)\..{3}$</sourcesRegexExpression>
+  <sourcesTypeSubexpression>4</sourcesTypeSubexpression>
+  <targetDir default-value="${project.build.directory}"/>
+  <tests>
+    <test>
+      <directory>src/test/resources</directory>
+      <includes>
+        <include>**/*.pkg</include>
+        <include>**/*.pkb</include>
+        <include>**/*.pks</include>
+        <include>**/*.sql</include>
+        <include>**/*.SQL</include>
+      </includes>
+    </test>
+  </tests>
+  <testsCustomTypeMapping>
+    <customTypeMapping>
+      <type>PACKAGE BODY</type>
+      <customMapping>resources</customMapping>
+    </customTypeMapping>
+  </testsCustomTypeMapping>
+  <testsNameSubexpression>2</testsNameSubexpression>
+  <testsOwner>myAPP</testsOwner>
+  <testsRegexExpression>/(\w+)/(\w+)/(\w+)\..{3}$</testsRegexExpression>
+  <testsTypeSubexpression>4</testsTypeSubexpression>
+  <url>jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111</url>
+  <user>myAPP</user>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=758154, ConflictMarker.markTime=536812, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=429293, ConflictIdSorter.topsortTime=391483, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=3140923, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=47462016, DefaultDependencyCollector.transformTime=7476383}
+[DEBUG] com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    com.oracle:ojdbc6:jar:11.2.0.1.0:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=28357, ConflictMarker.markTime=99250, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=15754, ConflictIdSorter.topsortTime=13391, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=118942, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=24501174, DefaultDependencyCollector.transformTime=366277}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG]   (f) reportDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes
+[DEBUG] -- end configuration --
+[DEBUG] Skipping non-existing directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG] Skipping non-existing directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG] Skipping non-existing directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes
+[DEBUG] Skipping non-existing directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\site
+[INFO] 
+[INFO] --- properties-maven-plugin:1.0.0:read-project-properties (default) @ utplsql-test ---
+[DEBUG] Using mirror testcomp-release (http://myREPO-testcomp.net.url.com/content/groups/public/) for central (http://repo1.maven.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=220948, ConflictMarker.markTime=126819, ConflictMarker.nodeCount=36, ConflictIdSorter.graphTime=122486, ConflictIdSorter.topsortTime=23631, ConflictIdSorter.conflictIdCount=17, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=1416665, ConflictResolver.conflictItemCount=36, DefaultDependencyCollector.collectTime=114085438, DefaultDependencyCollector.transformTime=1939693}
+[DEBUG] org.codehaus.mojo:properties-maven-plugin:jar:1.0.0:
+[DEBUG]    org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:4.12:test
+[DEBUG]             org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.22:compile
+[DEBUG] Created new class realm plugin>org.codehaus.mojo:properties-maven-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.codehaus.mojo:properties-maven-plugin:1.0.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.codehaus.mojo:properties-maven-plugin:1.0.0
+[DEBUG]   Included: org.codehaus.mojo:properties-maven-plugin:jar:1.0.0
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.22
+[DEBUG] Configuring mojo org.codehaus.mojo:properties-maven-plugin:1.0.0:read-project-properties from plugin realm ClassRealm[plugin>org.codehaus.mojo:properties-maven-plugin:1.0.0, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:properties-maven-plugin:1.0.0:read-project-properties' with basic configurator -->
+[DEBUG]   (s) files = [D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\sonar-project.properties]
+[DEBUG]   (f) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (f) quiet = false
+[DEBUG] -- end configuration --
+[DEBUG] Loading properties from File: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\sonar-project.properties
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=389908, ConflictMarker.markTime=209920, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=188652, ConflictIdSorter.topsortTime=32295, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=2633649, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=138333369, DefaultDependencyCollector.transformTime=3484357}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {file.encoding.pkg=sun.io, sonar.plsql.file.suffixes=sql,tab,tps,pks,pkb,tpb,prc,fnc, env.PROMPT=$P$G, env.=D:=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, java.home=D:\tools\java\1.8-66\jre, sonar.projectKey=testcomp.myAPP.sql, env.SAP_JRE7_64=C:/Sybase/Shared/SAPJRE-7_1_052_64BIT, env.HTTPS_PROXY=http://ncproxy:8080, env.JOB_EXEC_TIMEOUT=7200000, env.SQL_BROWSER_HOME=D:/tools/sqlbrowser/2017-07-1481, classworlds.conf=D:\tools\maven\3.6.0\bin\..\bin\m2.conf, java.endorsed.dirs=D:\tools\java\1.8-66\jre\lib\endorsed, env.YARN_HOME=D:/tools/Yarn, env.HUDSON_HOME=D:\apps\jenkins\com.testcomp.jenkins.master\workspace, sun.os.patch.level=, java.vendor.url=http://java.oracle.com/, env.INCLUDE=C:/Sybase/OCS-16_0/include;%INCLUDE%, env.NODE_NAME=windows-5, java.version=1.8.0_66, env.NO_PROXY=localhost,127.0.0.1,.intra,.echonet, env.SASS_BINARY_PATH=C:\Users\admintestcomp\sass\v4.12.0\win32-x64-64_binding.node, env.NODE_LABELS=com.testcomp.jenkins.TTT.slave windows-5 windows-x64 windows.server.2012.R2, env.JENKINS_SERVER_COOKIE=1c62dcc6807943ab, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SVN_REVISION=12458, env.CONF_HOME=D:/apps, sonar.tests=src/test, user.name=admintestcomp, sun.io.unicode.encoding=UnicodeLittle, env.JAVA_1.6_HOME=D:/tools/java/1.6, sun.jnu.encoding=Cp1252, java.runtime.name=Java(TM) SE Runtime Environment, env.ROOT_BUILD_CAUSE_MANUALTRIGGER=true, sonar.projectName=TTT_myAPP_SQL_UTPLSQL_CHECK, env.DSTX_HOME=C:/IBM/WebSphere Transformation Extender 9.0.0/, java.specification.name=Java Platform API Specification, env.SAP_JRE7=C:/Sybase/Shared/SAPJRE-7_1_052_64BIT, user.timezone=, user.script=, path.separator=;, env.MAVEN_CMD_LINE_ARGS=-gs C:\TEMP\global-settings7653176691186169200.xml -PutPLSQL-maven clean insmyAPPl validate utplsql:test -Dutplsql.user=myAPP -Dutplsql.password=myAPP123# -Dutplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111 -X, file.encoding=Cp1252, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -gs C:\TEMP\global-settings7653176691186169200.xml -PutPLSQL-maven clean insmyAPPl validate utplsql:test -Dutplsql.user=myAPP -Dutplsql.password=myAPP123# -Dutplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111 -X, env.RUN_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/display/redirect, env.MAVEN_TERMINATE_CMD=on, env.SVN_REVISION_1=12458, env.SAP_JRE7_32=C:/Sybase/Shared/SAPJRE-7_1_052_32BIT, env.BUILD_TAG=jenkins-TTT-myAPP-TTT_myAPP_SQL_UTPLSQL_CHECK-227, env.SONARQUBE_SCANNER_HOME=D:/tools/sonarqube-scanner/3.0.3.778/sonar-scanner-3.0.3.778, env.USER.HOME=D:\apps\jenkins\slave-prd-05/home, env.ROOT_BUILD_CAUSE=MANUALTRIGGER, java.io.tmpdir=D:\apps\jenkins\temp\, user.language=en, line.separator=
+, env.testcomp_2SVNC_HOME=D:/tools/2svnc/2.8, env.HTTP_PROXY=http://ncproxy:8080, env.JOB_NAME=TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK, java.vm.info=mixed mode, sonar.coverageReportPaths=target/utplsql/coverage-sonar-reporter.xml, env.BUILD_DISPLAY_NAME=#227, env.testcomp_PROJECT_OWNER_LOCATION=myCNT, env.DOCKER_TEMP=/appli/jen/temp, sun.desktop=windows, java.vm.specification.name=Java Virtual Machine Specification, env.JOB_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/display/redirect, env.WTX_HOME=C:/IBM/WebSphere Transformation Extender 9.0.0/, env.BUILD_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/, env.M2_HOME=D:/tools/maven/3.6.0, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.WDIR=D:\, env.BUILD_CAUSE_MANUALTRIGGER=true, env.PSMODULEPATH=C:WINDOWSsystem32WindowsPowerShellv1.0Modules, env.SYBROOT=C:/Sybase, env.JAVA_1.7_HOME=D:/tools/java/1.7, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.JAVACMD=D:/tools/java/1.8-66\bin\java.exe, env.JVMCONFIG=\.mvn\jvm.config, env.HUDSON_SERVER_COOKIE=1c62dcc6807943ab, env.BUILD_NUMBER=227, os.name=Windows Server 2012 R2, java.specification.vendor=Oracle Corporation, env.testcomp_PROJECT_CRITICALITY=C2, env.TMP=D:/apps/jenkins/temp, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, utplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111, env.JOB_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/, env.OS=Windows_NT, java.library.path=D:\tools\java\1.8-66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/tools/maven/3.6.0/bin;D:/tools/java/1.8-66/bin;C:/Sybase/OCS-16_0/bin;C:/Sybase/OCS-16_0/dll;C:/Sybase/OCS-16_0/lib3p64;C:/Sybase/OCS-16_0/lib3p;D:/apps/Perl64/site/bin;D:/apps/Perl64/bin;C:/Program Files (x86)/CA/SC/CAWIN/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/SysWOW64;C:\WINDOWS/System32/WindowsPowerShell/v1.0/;D:/tools/java/1.8-66/bin;D:/tools/groovy/latest/bin;D:/tools/maven/3.6.0/bin;C:/IBM/WebSphere Transformation Extender 9.0.0/;${PHANTOMJS_HOME}/bin;${GOW_HOME}/bin;D:/tools/2svnc/2.8/bin;D:/tools/sqlbrowser/2017-07-1481/bin;D:/tools/nodejs/latest;D:/tools/dart/1.20.1/bin;D:/tools/go/1.7.4/bin;D:/tools/python/3.4.3/bin;D:/tools/apache-subversion/1.8.13/bin;D:/tools/jasper-deployer/1.0.3;D:/tools/stc/2.1.1;C:/Users/admintestcomp/bin/Sencha/Cmd;D:/tools/git/2.9.2/bin;D:/tools/git/2.9.2/usr/bin;D:/tools/ant/1.9.0/bin;D:/tools/Yarn/bin;D:/tools/selenium_drivers;C:\Sybase\DataAccess64\ADONET\dll;C:\Sybase\DataAccess\ADONET\dll;C:\Sybase\OCS-16_0\lib;C:\Sybase\Shared\SAPJRE-7_1_052_32BIT;C:\Sybase\Shared\SAPJRE-7_1_052_64BIT;., env.PATH=D:/tools/maven/3.6.0/bin;D:/tools/java/1.8-66/bin;C:/Sybase/OCS-16_0/bin;C:/Sybase/OCS-16_0/dll;C:/Sybase/OCS-16_0/lib3p64;C:/Sybase/OCS-16_0/lib3p;D:/apps/Perl64/site/bin;D:/apps/Perl64/bin;C:/Program Files (x86)/CA/SC/CAWIN/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/SysWOW64;C:\WINDOWS/System32/WindowsPowerShell/v1.0/;D:/tools/java/1.8-66/bin;D:/tools/groovy/latest/bin;D:/tools/maven/3.6.0/bin;C:/IBM/WebSphere Transformation Extender 9.0.0/;${PHANTOMJS_HOME}/bin;${GOW_HOME}/bin;D:/tools/2svnc/2.8/bin;D:/tools/sqlbrowser/2017-07-1481/bin;D:/tools/nodejs/latest;D:/tools/dart/1.20.1/bin;D:/tools/go/1.7.4/bin;D:/tools/python/3.4.3/bin;D:/tools/apache-subversion/1.8.13/bin;D:/tools/jasper-deployer/1.0.3;D:/tools/stc/2.1.1;C:/Users/admintestcomp/bin/Sencha/Cmd;D:/tools/git/2.9.2/bin;D:/tools/git/2.9.2/usr/bin;D:/tools/ant/1.9.0/bin;D:/tools/Yarn/bin;D:/tools/selenium_drivers;C:\Sybase\DataAccess64\ADONET\dll;C:\Sybase\DataAccess\ADONET\dll;C:\Sybase\OCS-16_0\lib;C:\Sybase\Shared\SAPJRE-7_1_052_32BIT;C:\Sybase\Shared\SAPJRE-7_1_052_64BIT, env.HUDSON_URL=http://jenkins-testcomp.net.url.com/, library.jansi.path=D:\tools\maven\3.6.0\bin\..\lib\jansi-native, env.JENKINS_URL=http://jenkins-testcomp.net.url.com/, java.class.version=52.0, maven.multiModuleProjectDirectory=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, env.BUILD_CAUSE=MANUALTRIGGER, env.JENKINS_HOME=D:\apps\jenkins\com.testcomp.jenkins.master\workspace, env.BASE=D:\apps\jenkins\slave-prd-05, env.SVN_HOME=D:/tools/apache-subversion/1.8.13, env.SYSTEMROOT=C:\WINDOWS, env.SOANRQUBE_SCANNER_MSBUILD_HOME=D:/tools/sonarqube-scanner-msbuild/2.3.1.554, env.RUN_CHANGES_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/display/redirect?page=changes, env.COMSPEC=C:\WINDOWS\SYSTEM32\cmd.exe, env.SYBASE_OCS=OCS-16_0, sun.boot.library.path=D:\tools\java\1.8-66\jre\bin, project.build.sourceEncoding=UTF-8, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, user.variant=, sonar.language=plsql, env.SENCHA_CMD_HOME=C:/Users/admintestcomp/bin/Sencha/Cmd, junit.jupiter.version=5.0.3, env.NODE_HOME=D:/tools/nodejs/latest, env.TOOLS_HOME_LINUX=/appli/jen/tools, env.JAVA_1.8_HOME=D:/tools/java/1.8-66, java.vm.specification.version=1.8, awt.toolkit=sun.awt.windows.WToolkit, utplsql.password=myAPP123#, env.MAVEN_HOME=D:\tools\maven\3.6.0\bin\.., sun.cpu.isalist=amd64, env.MAVEN_PROJECTBASEDIR=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, env.GROOVY_HOME=D:/tools/groovy/latest, java.ext.dirs=D:\tools\java\1.8-66\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, os.version=6.3, env.ERROR_CODE=0, user.home=C:\Users\admintestcomp, java.vm.vendor=Oracle Corporation, env.DART_HOME=D:/tools/dart/1.20.1, env.JAVA_HOME=D:/tools/java/1.8-66, user.dir=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, maven.conf=D:\tools\maven\3.6.0\bin\../conf, env.SELENIUM_HOME=D:/tools/selenium_drivers, junit.platform.version=1.0.3, sun.cpu.endian=little, env.testcomp_SENCHA_URL_ARCH_SERV=http://gmpvlt0211.fr.net.com:1903 , env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.SVN_URL=https://bsv-testcomp.net.url.com/svn/myAPP/Clover/SQL/branches/myAPP.SQL-2.17, env.STC_HOME=D:/tools/stc/2.1.1, java.vm.version=25.66-b18, java.class.path=D:\tools\maven\3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar, env.GIT_HOME=D:/tools/git/2.9.2, env.EXEC_DIR=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, os.arch=amd64, maven.build.version=Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00), sun.java.launcher=SUN_STANDARD, env.BUILD_ID=227, java.vm.specification.vendor=Oracle Corporation, file.separator=\, sonar.testExecutionReportPaths=target/utplsql/sonar-test-reporter.xml, env.SYBASE=C:/Sybase, java.runtime.version=1.8.0_66-b18, sun.boot.class.path=D:\tools\java\1.8-66\jre\lib\resources.jar;D:\tools\java\1.8-66\jre\lib\rt.jar;D:\tools\java\1.8-66\jre\lib\sunrsasign.jar;D:\tools\java\1.8-66\jre\lib\jsse.jar;D:\tools\java\1.8-66\jre\lib\jce.jar;D:\tools\java\1.8-66\jre\lib\charsets.jar;D:\tools\java\1.8-66\jre\lib\jfr.jar;D:\tools\java\1.8-66\jre\classes, sonar.projectDescription=Clover project using utPLSQL, Jenkins and Sonar integrations, env.WORKSPACE=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, maven.version=3.6.0, env.TEMP=D:/apps/jenkins/temp, utplsql.user=myAPP, env.ANT_HOME=D:/tools/ant/1.9.0, user.country=US, env.EXECUTOR_NUMBER=0, env.testcomp_PROJECT_TRIGRAM=myAPP, maven.home=D:\tools\maven\3.6.0\bin\.., maven.compiler.target=1.8, env.LIB=C:/Sybase/OCS-16_0/lib;C:/Sybase/DataAccess/ADONET/dll;C:/Sybase/DataAccess64/ADONET/dll;%LIB%, env.PYTHON_HOME=D:/tools/python/3.4.3, env.JOB_BASE_NAME=TTT_myAPP_SQL_UTPLSQL_CHECK, java.vendor=Oracle Corporation, env.CLASSWORLDS_JAR="D:\tools\maven\3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar", env.SVN_URL_1=https://bsv-testcomp.net.url.com/svn/myAPP/Clover/SQL/branches/myAPP.SQL-2.17, env.GO_HOME=D:/tools/go/1.7.4, sonar.sources=src/myAPP, maven.compiler.source=1.8, env.HUDSON_COOKIE=9a12812a-c9fe-4581-bc38-ecc5b2297cc9, env.TOOLS_HOME=D:/tools, java.specification.version=1.8, env.JASPER_DEPLOYER_HOME=D:/tools/jasper-deployer/1.0.3, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\main\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\main\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1188628, ConflictMarker.markTime=544295, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=470253, ConflictIdSorter.topsortTime=97280, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=3202363, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=225608906, DefaultDependencyCollector.transformTime=5536296}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremenmyAPP:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremenmyAPP:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+[DEBUG]   (f) buildDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG]   (f) classpathElements = [D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes, D:\apps\jenkins\slave-prd-05\maven-repository\org\apache\maven\shared\maven-shared-utils\3.2.0\maven-shared-utils-3.2.0.jar, D:\apps\jenkins\slave-prd-05\maven-repository\commons-io\commons-io\2.5\commons-io-2.5.jar, D:\apps\jenkins\slave-prd-05\maven-repository\com\oracle\ojdbc6\11.2.0.1.0\ojdbc6-11.2.0.1.0.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG]   (f) projectArtifact = com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) smyAPPeMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncremenmyAPPCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ utplsql-test ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {file.encoding.pkg=sun.io, sonar.plsql.file.suffixes=sql,tab,tps,pks,pkb,tpb,prc,fnc, env.PROMPT=$P$G, env.=D:=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, java.home=D:\tools\java\1.8-66\jre, sonar.projectKey=testcomp.myAPP.sql, env.SAP_JRE7_64=C:/Sybase/Shared/SAPJRE-7_1_052_64BIT, env.HTTPS_PROXY=http://ncproxy:8080, env.JOB_EXEC_TIMEOUT=7200000, env.SQL_BROWSER_HOME=D:/tools/sqlbrowser/2017-07-1481, classworlds.conf=D:\tools\maven\3.6.0\bin\..\bin\m2.conf, java.endorsed.dirs=D:\tools\java\1.8-66\jre\lib\endorsed, env.YARN_HOME=D:/tools/Yarn, env.HUDSON_HOME=D:\apps\jenkins\com.testcomp.jenkins.master\workspace, sun.os.patch.level=, java.vendor.url=http://java.oracle.com/, env.INCLUDE=C:/Sybase/OCS-16_0/include;%INCLUDE%, env.NODE_NAME=windows-5, java.version=1.8.0_66, env.NO_PROXY=localhost,127.0.0.1,.intra,.echonet, env.SASS_BINARY_PATH=C:\Users\admintestcomp\sass\v4.12.0\win32-x64-64_binding.node, env.NODE_LABELS=com.testcomp.jenkins.TTT.slave windows-5 windows-x64 windows.server.2012.R2, env.JENKINS_SERVER_COOKIE=1c62dcc6807943ab, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SVN_REVISION=12458, env.CONF_HOME=D:/apps, sonar.tests=src/test, user.name=admintestcomp, sun.io.unicode.encoding=UnicodeLittle, env.JAVA_1.6_HOME=D:/tools/java/1.6, sun.jnu.encoding=Cp1252, java.runtime.name=Java(TM) SE Runtime Environment, env.ROOT_BUILD_CAUSE_MANUALTRIGGER=true, sonar.projectName=TTT_myAPP_SQL_UTPLSQL_CHECK, env.DSTX_HOME=C:/IBM/WebSphere Transformation Extender 9.0.0/, java.specification.name=Java Platform API Specification, env.SAP_JRE7=C:/Sybase/Shared/SAPJRE-7_1_052_64BIT, user.timezone=, user.script=, path.separator=;, env.MAVEN_CMD_LINE_ARGS=-gs C:\TEMP\global-settings7653176691186169200.xml -PutPLSQL-maven clean insmyAPPl validate utplsql:test -Dutplsql.user=myAPP -Dutplsql.password=myAPP123# -Dutplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111 -X, file.encoding=Cp1252, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -gs C:\TEMP\global-settings7653176691186169200.xml -PutPLSQL-maven clean insmyAPPl validate utplsql:test -Dutplsql.user=myAPP -Dutplsql.password=myAPP123# -Dutplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111 -X, env.RUN_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/display/redirect, env.MAVEN_TERMINATE_CMD=on, env.SVN_REVISION_1=12458, env.SAP_JRE7_32=C:/Sybase/Shared/SAPJRE-7_1_052_32BIT, env.BUILD_TAG=jenkins-TTT-myAPP-TTT_myAPP_SQL_UTPLSQL_CHECK-227, env.SONARQUBE_SCANNER_HOME=D:/tools/sonarqube-scanner/3.0.3.778/sonar-scanner-3.0.3.778, env.USER.HOME=D:\apps\jenkins\slave-prd-05/home, env.ROOT_BUILD_CAUSE=MANUALTRIGGER, java.io.tmpdir=D:\apps\jenkins\temp\, user.language=en, line.separator=
+, env.testcomp_2SVNC_HOME=D:/tools/2svnc/2.8, env.HTTP_PROXY=http://ncproxy:8080, env.JOB_NAME=TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK, java.vm.info=mixed mode, sonar.coverageReportPaths=target/utplsql/coverage-sonar-reporter.xml, env.BUILD_DISPLAY_NAME=#227, env.testcomp_PROJECT_OWNER_LOCATION=myCNT, env.DOCKER_TEMP=/appli/jen/temp, sun.desktop=windows, java.vm.specification.name=Java Virtual Machine Specification, env.JOB_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/display/redirect, env.WTX_HOME=C:/IBM/WebSphere Transformation Extender 9.0.0/, env.BUILD_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/, env.M2_HOME=D:/tools/maven/3.6.0, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.WDIR=D:\, env.BUILD_CAUSE_MANUALTRIGGER=true, env.PSMODULEPATH=C:WINDOWSsystem32WindowsPowerShellv1.0Modules, env.SYBROOT=C:/Sybase, env.JAVA_1.7_HOME=D:/tools/java/1.7, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.JAVACMD=D:/tools/java/1.8-66\bin\java.exe, env.JVMCONFIG=\.mvn\jvm.config, env.HUDSON_SERVER_COOKIE=1c62dcc6807943ab, env.BUILD_NUMBER=227, os.name=Windows Server 2012 R2, java.specification.vendor=Oracle Corporation, env.testcomp_PROJECT_CRITICALITY=C2, env.TMP=D:/apps/jenkins/temp, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, utplsql.url=jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111, env.JOB_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/, env.OS=Windows_NT, java.library.path=D:\tools\java\1.8-66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/tools/maven/3.6.0/bin;D:/tools/java/1.8-66/bin;C:/Sybase/OCS-16_0/bin;C:/Sybase/OCS-16_0/dll;C:/Sybase/OCS-16_0/lib3p64;C:/Sybase/OCS-16_0/lib3p;D:/apps/Perl64/site/bin;D:/apps/Perl64/bin;C:/Program Files (x86)/CA/SC/CAWIN/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/SysWOW64;C:\WINDOWS/System32/WindowsPowerShell/v1.0/;D:/tools/java/1.8-66/bin;D:/tools/groovy/latest/bin;D:/tools/maven/3.6.0/bin;C:/IBM/WebSphere Transformation Extender 9.0.0/;${PHANTOMJS_HOME}/bin;${GOW_HOME}/bin;D:/tools/2svnc/2.8/bin;D:/tools/sqlbrowser/2017-07-1481/bin;D:/tools/nodejs/latest;D:/tools/dart/1.20.1/bin;D:/tools/go/1.7.4/bin;D:/tools/python/3.4.3/bin;D:/tools/apache-subversion/1.8.13/bin;D:/tools/jasper-deployer/1.0.3;D:/tools/stc/2.1.1;C:/Users/admintestcomp/bin/Sencha/Cmd;D:/tools/git/2.9.2/bin;D:/tools/git/2.9.2/usr/bin;D:/tools/ant/1.9.0/bin;D:/tools/Yarn/bin;D:/tools/selenium_drivers;C:\Sybase\DataAccess64\ADONET\dll;C:\Sybase\DataAccess\ADONET\dll;C:\Sybase\OCS-16_0\lib;C:\Sybase\Shared\SAPJRE-7_1_052_32BIT;C:\Sybase\Shared\SAPJRE-7_1_052_64BIT;., env.PATH=D:/tools/maven/3.6.0/bin;D:/tools/java/1.8-66/bin;C:/Sybase/OCS-16_0/bin;C:/Sybase/OCS-16_0/dll;C:/Sybase/OCS-16_0/lib3p64;C:/Sybase/OCS-16_0/lib3p;D:/apps/Perl64/site/bin;D:/apps/Perl64/bin;C:/Program Files (x86)/CA/SC/CAWIN/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Windows/SysWOW64;C:\WINDOWS/System32/WindowsPowerShell/v1.0/;D:/tools/java/1.8-66/bin;D:/tools/groovy/latest/bin;D:/tools/maven/3.6.0/bin;C:/IBM/WebSphere Transformation Extender 9.0.0/;${PHANTOMJS_HOME}/bin;${GOW_HOME}/bin;D:/tools/2svnc/2.8/bin;D:/tools/sqlbrowser/2017-07-1481/bin;D:/tools/nodejs/latest;D:/tools/dart/1.20.1/bin;D:/tools/go/1.7.4/bin;D:/tools/python/3.4.3/bin;D:/tools/apache-subversion/1.8.13/bin;D:/tools/jasper-deployer/1.0.3;D:/tools/stc/2.1.1;C:/Users/admintestcomp/bin/Sencha/Cmd;D:/tools/git/2.9.2/bin;D:/tools/git/2.9.2/usr/bin;D:/tools/ant/1.9.0/bin;D:/tools/Yarn/bin;D:/tools/selenium_drivers;C:\Sybase\DataAccess64\ADONET\dll;C:\Sybase\DataAccess\ADONET\dll;C:\Sybase\OCS-16_0\lib;C:\Sybase\Shared\SAPJRE-7_1_052_32BIT;C:\Sybase\Shared\SAPJRE-7_1_052_64BIT, env.HUDSON_URL=http://jenkins-testcomp.net.url.com/, library.jansi.path=D:\tools\maven\3.6.0\bin\..\lib\jansi-native, env.JENKINS_URL=http://jenkins-testcomp.net.url.com/, java.class.version=52.0, maven.multiModuleProjectDirectory=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, env.BUILD_CAUSE=MANUALTRIGGER, env.JENKINS_HOME=D:\apps\jenkins\com.testcomp.jenkins.master\workspace, env.BASE=D:\apps\jenkins\slave-prd-05, env.SVN_HOME=D:/tools/apache-subversion/1.8.13, env.SYSTEMROOT=C:\WINDOWS, env.SOANRQUBE_SCANNER_MSBUILD_HOME=D:/tools/sonarqube-scanner-msbuild/2.3.1.554, env.RUN_CHANGES_DISPLAY_URL=http://jenkins-testcomp.net.url.com/job/TTT/job/myAPP/job/TTT_myAPP_SQL_UTPLSQL_CHECK/227/display/redirect?page=changes, env.COMSPEC=C:\WINDOWS\SYSTEM32\cmd.exe, env.SYBASE_OCS=OCS-16_0, sun.boot.library.path=D:\tools\java\1.8-66\jre\bin, project.build.sourceEncoding=UTF-8, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, user.variant=, sonar.language=plsql, env.SENCHA_CMD_HOME=C:/Users/admintestcomp/bin/Sencha/Cmd, junit.jupiter.version=5.0.3, env.NODE_HOME=D:/tools/nodejs/latest, env.TOOLS_HOME_LINUX=/appli/jen/tools, env.JAVA_1.8_HOME=D:/tools/java/1.8-66, java.vm.specification.version=1.8, awt.toolkit=sun.awt.windows.WToolkit, utplsql.password=myAPP123#, env.MAVEN_HOME=D:\tools\maven\3.6.0\bin\.., sun.cpu.isalist=amd64, env.MAVEN_PROJECTBASEDIR=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, env.GROOVY_HOME=D:/tools/groovy/latest, java.ext.dirs=D:\tools\java\1.8-66\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, os.version=6.3, env.ERROR_CODE=0, user.home=C:\Users\admintestcomp, java.vm.vendor=Oracle Corporation, env.DART_HOME=D:/tools/dart/1.20.1, env.JAVA_HOME=D:/tools/java/1.8-66, user.dir=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, maven.conf=D:\tools\maven\3.6.0\bin\../conf, env.SELENIUM_HOME=D:/tools/selenium_drivers, junit.platform.version=1.0.3, sun.cpu.endian=little, env.testcomp_SENCHA_URL_ARCH_SERV=http://gmpvlt0211.fr.net.com:1903 , env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.SVN_URL=https://bsv-testcomp.net.url.com/svn/myAPP/Clover/SQL/branches/myAPP.SQL-2.17, env.STC_HOME=D:/tools/stc/2.1.1, java.vm.version=25.66-b18, java.class.path=D:\tools\maven\3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar, env.GIT_HOME=D:/tools/git/2.9.2, env.EXEC_DIR=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, os.arch=amd64, maven.build.version=Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00), sun.java.launcher=SUN_STANDARD, env.BUILD_ID=227, java.vm.specification.vendor=Oracle Corporation, file.separator=\, sonar.testExecutionReportPaths=target/utplsql/sonar-test-reporter.xml, env.SYBASE=C:/Sybase, java.runtime.version=1.8.0_66-b18, sun.boot.class.path=D:\tools\java\1.8-66\jre\lib\resources.jar;D:\tools\java\1.8-66\jre\lib\rt.jar;D:\tools\java\1.8-66\jre\lib\sunrsasign.jar;D:\tools\java\1.8-66\jre\lib\jsse.jar;D:\tools\java\1.8-66\jre\lib\jce.jar;D:\tools\java\1.8-66\jre\lib\charsets.jar;D:\tools\java\1.8-66\jre\lib\jfr.jar;D:\tools\java\1.8-66\jre\classes, sonar.projectDescription=Clover project using utPLSQL, Jenkins and Sonar integrations, env.WORKSPACE=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK, maven.version=3.6.0, env.TEMP=D:/apps/jenkins/temp, utplsql.user=myAPP, env.ANT_HOME=D:/tools/ant/1.9.0, user.country=US, env.EXECUTOR_NUMBER=0, env.testcomp_PROJECT_TRIGRAM=myAPP, maven.home=D:\tools\maven\3.6.0\bin\.., maven.compiler.target=1.8, env.LIB=C:/Sybase/OCS-16_0/lib;C:/Sybase/DataAccess/ADONET/dll;C:/Sybase/DataAccess64/ADONET/dll;%LIB%, env.PYTHON_HOME=D:/tools/python/3.4.3, env.JOB_BASE_NAME=TTT_myAPP_SQL_UTPLSQL_CHECK, java.vendor=Oracle Corporation, env.CLASSWORLDS_JAR="D:\tools\maven\3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar", env.SVN_URL_1=https://bsv-testcomp.net.url.com/svn/myAPP/Clover/SQL/branches/myAPP.SQL-2.17, env.GO_HOME=D:/tools/go/1.7.4, sonar.sources=src/myAPP, maven.compiler.source=1.8, env.HUDSON_COOKIE=9a12812a-c9fe-4581-bc38-ecc5b2297cc9, env.TOOLS_HOME=D:/tools, java.specification.version=1.8, env.JASPER_DEPLOYER_HOME=D:/tools/jasper-deployer/1.0.3, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 8 resources
+[DEBUG] file TEST_F_myAPP_VALIDATOR.bdy.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\TEST_F_myAPP_VALIDATOR.bdy.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\TEST_F_myAPP_VALIDATOR.bdy.sql
+[DEBUG] file TEST_F_myAPP_VALIDATOR.spc.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\TEST_F_myAPP_VALIDATOR.spc.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\TEST_F_myAPP_VALIDATOR.spc.sql
+[DEBUG] file test_pk_myAPP_utils.bdy.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\test_pk_myAPP_utils.bdy.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\test_pk_myAPP_utils.bdy.sql
+[DEBUG] file test_pk_myAPP_utils.spc.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\test_pk_myAPP_utils.spc.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\test_pk_myAPP_utils.spc.sql
+[DEBUG] file tst_ext_ref_case.bdy.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\tst_ext_ref_case.bdy.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\tst_ext_ref_case.bdy.sql
+[DEBUG] file tst_ext_ref_case.spc.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\tst_ext_ref_case.spc.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\tst_ext_ref_case.spc.sql
+[DEBUG] file TST_UTPLSQL_CASES.pkb.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\TST_UTPLSQL_CASES.pkb.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\TST_UTPLSQL_CASES.pkb.sql
+[DEBUG] file TST_UTPLSQL_CASES.pks.sql has a filtered file extension
+[DEBUG] copy D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\resources\TST_UTPLSQL_CASES.pks.sql to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes\TST_UTPLSQL_CASES.pks.sql
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ utplsql-test ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+[DEBUG]   (f) buildDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG]   (f) classpathElements = [D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes, D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes, D:\apps\jenkins\slave-prd-05\maven-repository\org\apache\maven\shared\maven-shared-utils\3.2.0\maven-shared-utils-3.2.0.jar, D:\apps\jenkins\slave-prd-05\maven-repository\commons-io\commons-io\2.5\commons-io-2.5.jar, D:\apps\jenkins\slave-prd-05\maven-repository\com\oracle\ojdbc6\11.2.0.1.0\ojdbc6-11.2.0.1.0.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) smyAPPeMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncremenmyAPPCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=383212, ConflictMarker.markTime=119335, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=182745, ConflictIdSorter.topsortTime=34264, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=1101588, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=67305170, DefaultDependencyCollector.transformTime=1845170}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) basedir = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///D:/apps/jenkins/slave-prd-05/maven-repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.0.9:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.9:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.9:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.9:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.9:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.9:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.9:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.9:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.9:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.9:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.9:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {org.apache.maven.shared:maven-shared-utils=org.apache.maven.shared:maven-shared-utils:jar:3.2.0:compile, commons-io:commons-io=commons-io:commons-io:jar:2.5:compile, com.oracle:ojdbc6=com.oracle:ojdbc6:jar:11.2.0.1.0:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: testcomp-TTT-releases
+      url: https://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-releases/
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+,       id: testcomp-TTT-snapshots
+      url: https://myREPO-testcomp.net.url.com/content/repositories/testcomp-TTT-snapshots/
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => false, update => daily]
+,       id: testcomp-release
+      url: http://myREPO-testcomp.net.url.com/content/groups/public/
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\test\java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+[DEBUG]   (s) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=151631, ConflictMarker.markTime=74043, ConflictMarker.nodeCount=74, ConflictIdSorter.graphTime=98855, ConflictIdSorter.topsortTime=43717, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=1147274, ConflictResolver.conflictItemCount=70, DefaultDependencyCollector.collectTime=31472252, DefaultDependencyCollector.transformTime=1546634}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:runtime
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.4:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.4:jar' with basic configurator -->
+[DEBUG]   (f) classesDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes
+[DEBUG]   (f) defaultManifestFile = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\classes\META-INF\MANIFEST.MF
+[DEBUG]   (f) finalName = utplsql-test-0.0.1-SNAPSHOT
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG]   (f) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2a2bb0eb
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[DEBUG] isUp2date: false (Destination D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql-test-0.0.1-SNAPSHOT.jar not found.)
+[INFO] Building jar: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql-test-0.0.1-SNAPSHOT.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/com.testcomp.utplsql/
+[DEBUG] adding directory META-INF/maven/com.testcomp.utplsql/utplsql-test/
+[DEBUG] adding entry META-INF/maven/com.testcomp.utplsql/utplsql-test/pom.xml
+[DEBUG] adding entry META-INF/maven/com.testcomp.utplsql/utplsql-test/pom.properties
+[INFO] 
+[INFO] --- maven-insmyAPPl-plugin:2.4:insmyAPPl (default-insmyAPPl) @ utplsql-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=101219, ConflictMarker.markTime=107520, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=27963, ConflictIdSorter.topsortTime=22843, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=464739, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=21433112, DefaultDependencyCollector.transformTime=747914}
+[DEBUG] org.apache.maven.plugins:maven-insmyAPPl-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-insmyAPPl-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4:insmyAPPl from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-insmyAPPl-plugin:2.4:insmyAPPl' with basic configurator -->
+[DEBUG]   (f) artifact = com.testcomp.utplsql:utplsql-test:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///D:/apps/jenkins/slave-prd-05/maven-repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) packaging = jar
+[DEBUG]   (f) pomFile = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] InsmyAPPling D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql-test-0.0.1-SNAPSHOT.jar to D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\0.0.1-SNAPSHOT\utplsql-test-0.0.1-SNAPSHOT.jar
+[DEBUG] Writing tracking file D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\0.0.1-SNAPSHOT\_remote.repositories
+[INFO] InsmyAPPling D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml to D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\0.0.1-SNAPSHOT\utplsql-test-0.0.1-SNAPSHOT.pom
+[DEBUG] Writing tracking file D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\0.0.1-SNAPSHOT\_remote.repositories
+[DEBUG] InsmyAPPling com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT/maven-metadata.xml to D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\0.0.1-SNAPSHOT\maven-metadata-local.xml
+[DEBUG] InsmyAPPling com.testcomp.utplsql:utplsql-test/maven-metadata.xml to D:\apps\jenkins\slave-prd-05\maven-repository\com\testcomp\utplsql\utplsql-test\maven-metadata-local.xml
+[INFO] 
+[INFO] --- utplsql-maven-plugin:3.1.0-SNAPSHOT:test (default-cli) @ utplsql-test ---
+[WARNING] The POM for org.apache.maven:maven-core:jar:3.5.2 is invalid, transitive dependencies (if any) will not be available: 26 problems were encountered while building the effective model for org.apache.maven:maven-core:3.5.2
+[ERROR] Invalid packaging for parent POM org.apache.maven:maven:3.5.2, must be "pom" but is "zip" @ org.apache.maven:maven:3.5.2
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-model:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-settings:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-settings-builder:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-builder-support:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-repository-metadata:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-artifact:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-plugin-api:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-model-builder:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-resolver-provider:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven.resolver:maven-resolver-impl:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven.resolver:maven-resolver-api:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven.resolver:maven-resolver-spi:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven.resolver:maven-resolver-util:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven.shared:maven-shared-utils:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.eclipse.sisu:org.eclipse.sisu.plexus:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.eclipse.sisu:org.eclipse.sisu.inject:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for com.google.inject:guice:jar:no_aop is missing. @ 
+[ERROR] 'dependencies.dependency.version' for com.google.guava:guava:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for javax.inject:javax.inject:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.codehaus.plexus:plexus-utils:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.codehaus.plexus:plexus-classworlds:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.codehaus.plexus:plexus-component-annotations:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.commons:commons-lang3:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for commons-jxpath:commons-jxpath:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.mockito:mockito-core:jar is missing. @ 
+
+[WARNING] The POM for org.apache.maven:maven-plugin-api:jar:3.5.2 is invalid, transitive dependencies (if any) will not be available: 6 problems were encountered while building the effective model for org.apache.maven:maven-plugin-api:3.5.2
+[ERROR] Invalid packaging for parent POM org.apache.maven:maven:3.5.2, must be "pom" but is "zip" @ org.apache.maven:maven-plugin-api:[unknown-version]
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-model:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.apache.maven:maven-artifact:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.eclipse.sisu:org.eclipse.sisu.plexus:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.codehaus.plexus:plexus-utils:jar is missing. @ 
+[ERROR] 'dependencies.dependency.version' for org.codehaus.plexus:plexus-classworlds:jar is missing. @ 
+
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=87040, ConflictMarker.markTime=37416, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=33871, ConflictIdSorter.topsortTime=20480, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.tomyAPPTime=298930, ConflictResolver.conflictItemCount=13, DefaultDependencyCollector.collectTime=193727841, DefaultDependencyCollector.transformTime=501366}
+[DEBUG] org.utplsql:utplsql-maven-plugin:jar:3.1.0-20181106.153931-1:
+[DEBUG]    org.apache.maven:maven-core:jar:3.5.2:compile
+[DEBUG]    org.utplsql:java-api:jar:3.1.1:compile
+[DEBUG]       com.oracle.jdbc:ojdbc8:jar:12.2.0.1.0:compile
+[DEBUG]       com.oracle.jdbc:orai18n.jar:jar:12.2.0.1.0:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0.2:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.5.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.kie.modules:org-apache-commons-lang3:pom:6.5.0.Final:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG] Created new class realm plugin>org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin>org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT
+[DEBUG]   Included: org.utplsql:utplsql-maven-plugin:jar:3.1.0-SNAPSHOT
+[DEBUG]   Included: org.utplsql:java-api:jar:3.1.1
+[DEBUG]   Included: com.oracle.jdbc:ojdbc8:jar:12.2.0.1.0
+[DEBUG]   Included: com.oracle.jdbc:orai18n.jar:jar:12.2.0.1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.kie.modules:org-apache-commons-lang3:pom:6.5.0.Final
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG] Configuring mojo org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT:test from plugin realm ClassRealm[plugin>org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.utplsql:utplsql-maven-plugin:3.1.0-SNAPSHOT:test' with basic configurator -->
+[DEBUG]   (f) ignoreFailure = true
+[DEBUG]   (f) password = myAPP123#
+[DEBUG]   (f) paths = [myAPP]
+[DEBUG]   (f) project = MavenProject: com.testcomp.utplsql:utplsql-test:0.0.1-SNAPSHOT @ D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\pom.xml
+[DEBUG]   (s) name = UT_SONAR_TEST_REPORTER
+[DEBUG]   (s) fileOutput = utplsql/sonar-test-reporter.xml
+[DEBUG]   (s) consoleOutput = true
+[DEBUG]   (s) name = UT_COVERAGE_SONAR_REPORTER
+[DEBUG]   (s) fileOutput = utplsql/coverage-sonar-reporter.xml
+[DEBUG]   (s) consoleOutput = true
+[DEBUG]   (s) name = UT_COVERAGE_HTML_REPORTER
+[DEBUG]   (s) fileOutput = utplsql/coverage-html-reporter.html
+[DEBUG]   (s) consoleOutput = true
+[DEBUG]   (f) reporters = [org.utplsql.maven.plugin.model.ReporterParameter@7a7d1b47, org.utplsql.maven.plugin.model.ReporterParameter@6eb82908, org.utplsql.maven.plugin.model.ReporterParameter@4a8df3e2]
+[DEBUG]   (f) skipCompatibilityCheck = false
+[DEBUG]   (s) directory = src/myAPP
+[DEBUG]   (s) includes = [**/*.pkg, **/*.pkb, **/*.fnc, packages/*.sql, packages/*.SQL]
+[DEBUG]   (f) sources = [Resource {targetPath: null, filtering: false, FileSet {directory: src/myAPP, PatternSet [includes: {**/*.pkg, **/*.pkb, **/*.fnc, packages/*.sql, packages/*.SQL}, excludes: {}]}}]
+[DEBUG]   (s) type = PACKAGE BODY
+[DEBUG]   (s) customMapping = packages
+[DEBUG]   (f) sourcesCustomTypeMapping = [org.utplsql.maven.plugin.CustomTypeMapping@25c53f74]
+[DEBUG]   (f) sourcesNameSubexpression = 2
+[DEBUG]   (f) sourcesOwner = myAPP
+[DEBUG]   (f) sourcesRegexExpression = /(\w+)/(\w+)/(\w+)\..{3}$
+[DEBUG]   (f) sourcesTypeSubexpression = 4
+[DEBUG]   (f) targetDir = D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG]   (s) directory = src/test/resources
+[DEBUG]   (s) includes = [**/*.pkg, **/*.pkb, **/*.pks, **/*.sql, **/*.SQL]
+[DEBUG]   (f) tests = [Resource {targetPath: null, filtering: false, FileSet {directory: src/test/resources, PatternSet [includes: {**/*.pkg, **/*.pkb, **/*.pks, **/*.sql, **/*.SQL}, excludes: {}]}}]
+[DEBUG]   (s) type = PACKAGE BODY
+[DEBUG]   (s) customMapping = resources
+[DEBUG]   (f) testsCustomTypeMapping = [org.utplsql.maven.plugin.CustomTypeMapping@5e2f3be5]
+[DEBUG]   (f) testsNameSubexpression = 2
+[DEBUG]   (f) testsOwner = myAPP
+[DEBUG]   (f) testsRegexExpression = /(\w+)/(\w+)/(\w+)\..{3}$
+[DEBUG]   (f) testsTypeSubexpression = 4
+[DEBUG]   (f) url = jdbc:oracle:thin:@testcompx015613.net.com:1521:DmyAPP111
+[DEBUG]   (f) user = myAPP
+[DEBUG] -- end configuration --
+[DEBUG] Java Api Version = 3.1.1.235
+[INFO] utPLSQL Version = v3.1.3.2321-develop
+[INFO] Invoking TestRunner with: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target
+[DEBUG] Invoking TestRunner with: 
+[DEBUG] reporters=
+[DEBUG] UT_SONAR_TEST_REPORTER
+[DEBUG] UT_COVERAGE_SONAR_REPORTER
+[DEBUG] UT_COVERAGE_HTML_REPORTER
+[DEBUG] sources=
+[DEBUG] src/myAPP/packages/pk_myAPP_gui.bdy.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_gui.spc.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_housekeeping.bdy.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_housekeeping.spc.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_tools.bdy.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_tools.spc.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_utils.bdy.sql
+[DEBUG] src/myAPP/packages/pk_myAPP_utils.spc.sql
+[DEBUG] tests=
+[DEBUG] src/test/resources/TEST_F_myAPP_VALIDATOR.bdy.sql
+[DEBUG] src/test/resources/TEST_F_myAPP_VALIDATOR.spc.sql
+[DEBUG] src/test/resources/test_pk_myAPP_utils.bdy.sql
+[DEBUG] src/test/resources/test_pk_myAPP_utils.spc.sql
+[DEBUG] src/test/resources/tst_ext_ref_case.bdy.sql
+[DEBUG] src/test/resources/tst_ext_ref_case.spc.sql
+[DEBUG] src/test/resources/TST_UTPLSQL_CASES.pkb.sql
+[DEBUG] src/test/resources/TST_UTPLSQL_CASES.pks.sql
+[debug] Creating directory for reporter file D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\sonar-test-reporter.xml
+[info] Writing report UT_SONAR_TEST_REPORTER to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\sonar-test-reporter.xml
+[info] Writing report UT_SONAR_TEST_REPORTER to Console
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<testExecutions version="1">
+<file path="all.globaltests.test_p_myAPP_launchpivot">
+<testCase name="test_p_client_id_2" duration="30" >
+</testCase>
+<testCase name="test_p_client_id_1" duration="1" >
+</testCase>
+<testCase name="test_p_client_id_9" duration="19" >
+</testCase>
+</file>
+<file path="all.globaltests.test_p_status_update">
+<testCase name="update_coulmn" duration="18" >
+</testCase>
+</file>
+<file path="all.globaltests.test_p_status_upd_ack">
+<testCase name="test_update" duration="2" >
+<error message="encountered errors">
+<![CDATA[
+ORA-01403: no data found
+ORA-06512: at "myAPP.PK_myAPP_UTILS", line 2079
+ORA-06512: at "myAPP.TEST_P_STATUS_UPD_ACK", line 17
+ORA-06512: at line 6
+]]>
+</error>
+</testCase>
+</file>
+<file path="test_f_client_ack_checker">
+<testCase name="test_org_id" duration="1" >
+<error message="encountered errors">
+<![CDATA[
+ORA-04063: package body "myAPP.TEST_F_CLIENT_ACK_CHECKER" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "myAPP.TEST_F_CLIENT_ACK_CHECKER"
+ORA-06512: at line 6
+]]>
+</error>
+</testCase>
+</file>
+<file path="test_f_myAPP_validator">
+<testCase name="test_date_check_func_output" duration="30" >
+</testCase>
+<testCase name="test_date_chk_trd_tbl_op" duration="19" >
+</testCase>
+<testCase name="test_date_chk_fm_tbl_op" duration="23" >
+</testCase>
+<testCase name="test_reccnt_check_func_output" duration="6" >
+</testCase>
+<testCase name="test_reccnt_chk_trd_tbl_op" duration="18" >
+</testCase>
+<testCase name="test_reccnt_chk_fm_tbl_op" duration="23" >
+</testCase>
+<testCase name="test_dupli_check_func_output" duration="6" >
+</testCase>
+<testCase name="test_dupli_chk_fm_tbl_op" duration="22" >
+</testCase>
+<testCase name="test_dupli_chk_trade_tbl_op" duration="19" >
+</testCase>
+<testCase name="test_missing_tgt_pfm_func_op" duration="19" >
+</testCase>
+<testCase name="test_missing_tgtpfm_trd_tbl_op" duration="31" >
+</testCase>
+</file>
+<file path="test_f_time_zone_converter">
+<testCase name="client_id_blank_check" duration="1" >
+</testCase>
+<testCase name="client_id_zero" duration="1" >
+</testCase>
+<testCase name="client_id_1" duration="1" >
+</testCase>
+<testCase name="client_id_2" duration="1" >
+</testCase>
+<testCase name="client_id_4" duration="1" >
+</testCase>
+</file>
+<file path="tst_ext_ref_case">
+<testCase name="output_blank_check" duration="3" >
+</testCase>
+<testCase name="output_blank_check_tfl" duration="2" >
+</testCase>
+<testCase name="test_insert_columns" duration="23" >
+<failure message="some expectations have failed">
+Actual: refcursor [ count = 1 ] was expected to equal: refcursor [ count = 1 ]
+Diff:
+Rows: [ 1 differences ]
+  Row No. 1 - Actual:   &lt;EXTERNAL_REF_ID&gt;BPM1F7BH7BPM1F7BK0BPM1F7BJ3&lt;/EXTERNAL_REF_ID&gt;
+  Row No. 1 - Expected: &lt;EXTERNAL_REF_ID&gt;BPM1F7BH7BPM1F7BK0BPM1F7BJ2&lt;/EXTERNAL_REF_ID&gt;
+</failure>
+</testCase>
+<testCase name="output_value_check_insert" duration="2" >
+</testCase>
+<testCase name="test_update_columns" duration="20" >
+</testCase>
+<testCase name="output_value_check_update" duration="2" >
+</testCase>
+</file>
+</testExecutions>
+[info] Writing report UT_COVERAGE_SONAR_REPORTER to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\coverage-sonar-reporter.xml
+[info] Writing report UT_COVERAGE_SONAR_REPORTER to Console
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<coverage version="1">
+</coverage>
+[info] Writing report UT_COVERAGE_HTML_REPORTER to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\coverage-html-reporter.html
+[info] Writing report UT_COVERAGE_HTML_REPORTER to Console
+<!DOCTYPE html><html xmlns='http://www.w3.org/1999/xhtml'><head><title>Code coverage</title><meta http-equiv="content-type" content="text/html; charset=WINDOWS-1252" /><script src='https://utplsql.github.io/utPLSQL-coverage-html/assets/application.js'></script><link href='https://utplsql.github.io/utPLSQL-coverage-html/assets/application.css' media='screen, print' rel='stylesheet' type='text/css'/><link rel="shortcut icon" type="image/png" href="https://utplsql.github.io/utPLSQL-coverage-html/assets/favicon_red.png" /><link rel="icon" type="image/png" href="https://utplsql.github.io/utPLSQL-coverage-html/assets/favicon_red.png" /></head><body><div id="loading"><img src="https://utplsql.github.io/utPLSQL-coverage-html/assets/loading.gif" alt="loading"/></div><div id="wrapper" style="display:none;"><div class="timestamp">Generated <abbr class="timeago" title="2019-11-27T11:14:28">2019-11-27T11:14:28</abbr></div><ul class="group_tabs"></ul><div id="content"><div class="file_list_container" id="991716A5FE7B1B4DB80E6C06908178EB"><h2><span class="group_name">All files</span> (<span class="covered_percent"><span class="red">0%</span></span> lines covered at <span class="covered_strength"><span class="red">0</span></span> hits/line)</h2><a id="a_991716A5FE7B1B4DB80E6C06908178EB"></a><div><b>0</b> files in tomyAPP. </div><div><b>0</b> relevant lines. <span class="green"><b>0</b> lines covered</span> and <span class="red"><b>0</b> lines missed.</span><table class="file_list"><thead><tr><th>File</th><th>% covered</th><th>Lines</th><th>Relevant Lines</th><th>Lines covered</th><th>Lines missed</th><th>Avg. Hits / Line </th></tr></thead><tbody></tbody></table></div>
+</div><div id="footer">Generated by <a href="http://github.com/utPLSQL/utPLSQL">utPLSQL v3.1.3.2321-develop</a><br/>Based on <a href="http://github.com/colszowka/simplecov-html">simplecov-html</a> v0.10.0 </div><div class="source_files"></div></div></div></body></html>
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] TomyAPP time:  14.535 s
+[INFO] Finished at: 2019-11-27T11:14:30+01:00
+[INFO] ------------------------------------------------------------------------
+[TTT_myAPP_SQL_UTPLSQL_CHECK] $ D:\apps\jenkins\slave-prd-05\tools\hudson.plugins.sonar.SonarRunnerInsmyAPPlation\Sonar_Runner_3.0.3.778\sonar-scanner-3.0.3.778\bin\sonar-scanner.bat -Dsonar.host.url=http://sonar-testcomp.net.url.com ******** -Dsonar.testExecutionReportPaths=./target/utplsql/sonar-test-reporter.xml -Dsonar.language=plsql -Dsonar.plsql.file.suffixes=sql,tab,tps,pks,pkb,tpb,prc,fnc -Dsonar.sources=./src/myAPP/packages/ -Dsonar.projectVersion=${$POM_VERSION} -Dsonar.projectKey=testcomp.myAPP.sql -Dsonar.verbose=true "-Dsonar.projectDescription=myAPP project using utPLSQL, Jenkins and Sonar integrations" -Dsonar.tests=./src/test/ -Dsonar.coverageReportPaths=./target/utplsql/coverage-sonar-reporter.xml -Dsonar.projectName=TTT_myAPP_SQL_UTPLSQL_CHECK -Dsonar.projectBaseDir=D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+INFO: Scanner configuration file: D:\apps\jenkins\slave-prd-05\tools\hudson.plugins.sonar.SonarRunnerInsmyAPPlation\Sonar_Runner_3.0.3.778\sonar-scanner-3.0.3.778\bin\..\conf\sonar-scanner.properties
+INFO: Project root configuration file: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\sonar-project.properties
+11:14:31.072 INFO: SonarQube Scanner 3.0.3.778
+11:14:31.077 INFO: Java 1.8.0_66 Oracle Corporation (64-bit)
+11:14:31.077 INFO: Windows Server 2012 R2 6.3 amd64
+11:14:31.234 DEBUG: keyStore is : 
+11:14:31.234 DEBUG: keyStore type is : jks
+11:14:31.234 DEBUG: keyStore provider is : 
+11:14:31.235 DEBUG: init keystore
+11:14:31.235 DEBUG: init keymanager of type SunX509
+11:14:31.319 INFO: User cache: C:\Users\admintestcomp\.sonar\cache
+11:14:31.319 DEBUG: Extract sonar-scanner-api-batch in temp...
+11:14:31.324 DEBUG: Get bootstrap index...
+11:14:31.324 DEBUG: Download: http://sonar-testcomp.net.url.com/batch/index
+11:14:31.426 DEBUG: Get bootstrap completed
+11:14:31.427 DEBUG: Create isolated classloader...
+11:14:31.442 DEBUG: Start temp cleaning...
+11:14:31.454 DEBUG: Temp cleaning done
+11:14:31.454 DEBUG: Execution getVersion
+11:14:31.461 DEBUG: Execution start
+11:14:31.711 INFO: Publish mode
+11:14:31.852 INFO: Load global settings
+11:14:31.917 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/settings/values.protobuf | time=54ms
+11:14:31.994 INFO: Load global settings (done) | time=143ms
+11:14:32.011 INFO: Server id: 46AF5D23-1f486990f7cc38d
+11:14:32.022 INFO: User cache: C:\Users\admintestcomp\.sonar\cache
+11:14:32.298 INFO: Load plugins index
+11:14:32.321 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/plugins/insmyAPPled | time=22ms
+11:14:32.364 INFO: Load plugins index (done) | time=66ms
+11:14:32.365 DEBUG: Load plugins
+11:14:32.505 DEBUG: Load plugins (done) | time=140ms
+11:14:32.520 DEBUG: API compatibility mode is enabled on plugin PMD [pmd] (built with API lower than 5.2)
+11:14:32.522 DEBUG: API compatibility mode is enabled on plugin Mantis [mantis] (built with API lower than 5.2)
+11:14:32.531 DEBUG: API compatibility mode is enabled on plugin Clover [clover] (built with API lower than 5.2)
+11:14:32.531 DEBUG: API compatibility mode is enabled on plugin Widget Lab [widgetlab] (built with API lower than 5.2)
+11:14:32.533 DEBUG: API compatibility mode is enabled on plugin Timeline [timeline] (built with API lower than 5.2)
+11:14:32.880 DEBUG: Plugins:
+11:14:32.880 DEBUG:   * Cobertura 2.0 (cobertura)
+11:14:32.880 DEBUG:   * CSS / SCSS / Less 3.1 (css)
+11:14:32.881 DEBUG:   * PMD 2.6 (pmd)
+11:14:32.881 DEBUG:   * JSON 2.3 (JSON)
+11:14:32.881 DEBUG:   * Branch 1.0.0.507 (branch)
+11:14:32.881 DEBUG:   * Svn 1.8.0.1168 (scmsvn)
+11:14:32.881 DEBUG:   * Mantis 0.4 (mantis)
+11:14:32.881 DEBUG:   * Ansible Lint 2.0.0 (ansible)
+11:14:32.881 DEBUG:   * SonarPLSQL 3.3.0.2273 (plsql)
+11:14:32.881 DEBUG:   * Java Properties 2.6 (javaProperties)
+11:14:32.882 DEBUG:   * SonarC# 6.7.1.4347 (csharp)
+11:14:32.882 DEBUG:   * SonarJava 5.9.2.16552 (java)
+11:14:32.882 DEBUG:   * SonarHTML 3.0.1.1444 (web)
+11:14:32.882 DEBUG:   * SonarFlex 2.4.0.1222 (flex)
+11:14:32.882 DEBUG:   * SonarXML 1.5.1.1452 (xml)
+11:14:32.882 DEBUG:   * SonarTS 1.8.0.3332 (typescript)
+11:14:32.882 DEBUG:   * Build Breaker 2.2 (buildbreaker)
+11:14:32.882 DEBUG:   * Csv export plugin 0.4.0 (csvexport)
+11:14:32.883 DEBUG:   * Extras Ansible Lint Rules 2.0.0 (ansibleextras)
+11:14:32.883 DEBUG:   * SonarVB 7.9.1.7622 (vbnet)
+11:14:32.883 DEBUG:   * SonarSwift 4.0.0.2853 (swift)
+11:14:32.883 DEBUG:   * Dependency-Check 1.1.3 (dependencycheck)
+11:14:32.883 DEBUG:   * SonarCFamily 6.0.0.10816 (cpp)
+11:14:32.883 DEBUG:   * SonarPython 1.10.0.2131 (python)
+11:14:32.883 DEBUG:   * Clover 3.1 (clover)
+11:14:32.883 DEBUG:   * Kotlin 0.5.2 (kotlin)
+11:14:32.884 DEBUG:   * SonarRPG 2.3.0.1187 (rpg)
+11:14:32.884 DEBUG:   * Widget Lab 1.8.1 (widgetlab)
+11:14:32.884 DEBUG:   * SonarPLI 1.9.0.1349 (pli)
+11:14:32.884 DEBUG:   * SonarTSQL 1.3.1.3067 (tsql)
+11:14:32.884 DEBUG:   * SonarVB6 2.5.0.1598 (vb)
+11:14:32.884 DEBUG:   * SonarJS 5.0.0.6962 (javascript)
+11:14:32.884 DEBUG:   * License 3.4 (license)
+11:14:32.884 DEBUG:   * SonarCOBOL 4.4.0.3403 (cobol)
+11:14:32.885 DEBUG:   * Git 1.4.1.1128 (scmgit)
+11:14:32.885 DEBUG:   * SonarPHP 2.15.0.4060 (php)
+11:14:32.885 DEBUG:   * Timeline 1.5 (timeline)
+11:14:32.885 DEBUG:   * Developer 1.0.0.240 (developer)
+11:14:32.885 DEBUG:   * SonarABAP 3.7.0.1603 (abap)
+11:14:32.885 DEBUG:   * Governance 2.0.3 (governance)
+11:14:32.935 DEBUG: Execution getVersion
+11:14:32.935 INFO: SonarQube server 6.7.5
+11:14:32.936 INFO: Default locale: "en_US", source code encoding: "windows-1252" (analysis is platform dependent)
+11:14:32.936 DEBUG: Work directory: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\.scannerwork
+11:14:32.937 DEBUG: Execution getVersion
+11:14:32.937 DEBUG: Execution execute
+11:14:33.776 INFO: Process project properties
+11:14:33.784 DEBUG: Process project properties (done) | time=8ms
+11:14:33.785 INFO: Execute project builders
+11:14:33.788 INFO: Execute project builders (done) | time=3ms
+11:14:33.811 INFO: Load branch configuration
+11:14:33.812 INFO: Load branch configuration (done) | time=1ms
+11:14:33.813 INFO: Load project repositories
+11:14:33.839 DEBUG: GET 200 http://sonar-testcomp.net.url.com/batch/project.protobuf?key=testcomp.myAPP.sql | time=25ms
+11:14:33.864 INFO: Load project repositories (done) | time=51ms
+11:14:33.968 DEBUG: Available languages:
+11:14:33.968 DEBUG:   * CSS => "css"
+11:14:33.968 DEBUG:   * SCSS => "scss"
+11:14:33.968 DEBUG:   * Less => "less"
+11:14:33.968 DEBUG:   * JSON => "json"
+11:14:33.968 DEBUG:   * PL/SQL => "plsql"
+11:14:33.969 DEBUG:   * Java Properties => "jproperties"
+11:14:33.969 DEBUG:   * C# => "cs"
+11:14:33.969 DEBUG:   * Java => "java"
+11:14:33.969 DEBUG:   * HTML => "web"
+11:14:33.970 DEBUG:   * Flex => "flex"
+11:14:33.970 DEBUG:   * XML => "xml"
+11:14:33.970 DEBUG:   * TypeScript => "ts"
+11:14:33.971 DEBUG:   * Visual Basic .NET => "vbnet"
+11:14:33.971 DEBUG:   * Swift => "swift"
+11:14:33.971 DEBUG:   * Neutral => "neutral"
+11:14:33.971 DEBUG:   * C => "c"
+11:14:33.972 DEBUG:   * C++ => "cpp"
+11:14:33.972 DEBUG:   * Objective-C => "objc"
+11:14:33.972 DEBUG:   * Python => "py"
+11:14:33.972 DEBUG:   * Kotlin => "kotlin"
+11:14:33.972 DEBUG:   * RPG => "rpg"
+11:14:33.972 DEBUG:   * PL/I => "pli"
+11:14:33.972 DEBUG:   * T-SQL => "tsql"
+11:14:33.972 DEBUG:   * Vb => "vb"
+11:14:33.973 DEBUG:   * JavaScript => "js"
+11:14:33.973 DEBUG:   * COBOL => "cobol"
+11:14:33.973 DEBUG:   * PHP => "php"
+11:14:33.973 DEBUG:   * ABAP => "abap"
+11:14:33.988 INFO: Load quality profiles
+11:14:34.020 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/qualityprofiles/search.protobuf?projectKey=testcomp.myAPP.sql | time=31ms
+11:14:34.028 INFO: Load quality profiles (done) | time=40ms
+11:14:34.043 INFO: Load active rules
+11:14:34.079 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3VJp-dOLLj47Yjb&p=1&ps=500 | time=36ms
+11:14:34.151 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3aSp-dOLLj47YqA&p=1&ps=500 | time=35ms
+11:14:34.191 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3edp-dOLLj47YwU&p=1&ps=500 | time=33ms
+11:14:34.225 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3gPp-dOLLj47YyI&p=1&ps=500 | time=27ms
+11:14:34.263 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3nlp-dOLLj47Y4C&p=1&ps=500 | time=35ms
+11:14:34.331 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3uap-dOLLj47ZEV&p=1&ps=500 | time=60ms
+11:14:34.379 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3yNp-dOLLj47ZJO&p=1&ps=500 | time=25ms
+11:14:34.408 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3zqp-dOLLj47ZKc&p=1&ps=500 | time=27ms
+11:14:34.433 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ31Np-dOLLj47ZLb&p=1&ps=500 | time=22ms
+11:14:34.455 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3-Ip-dOLLj47ZPP&p=1&ps=500 | time=22ms
+11:14:34.486 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ4IHp-dOLLj47ZP7&p=1&ps=500 | time=31ms
+11:14:34.520 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ4Pqp-dOLLj47ZXE&p=1&ps=500 | time=28ms
+11:14:34.568 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3GDp-dOLLj47YeZ&p=1&ps=500 | time=45ms
+11:14:34.603 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3TWp-dOLLj47Yh8&p=1&ps=500 | time=24ms
+11:14:34.641 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3X5p-dOLLj47Ymo&p=1&ps=500 | time=36ms
+11:14:34.671 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWikqe3U-JnBPwzZf4UF&p=1&ps=500 | time=26ms
+11:14:34.700 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWahALsa16dvj2FCWI5e&p=1&ps=500 | time=26ms
+11:14:34.723 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWlX4Uad6BjsjVLCoWnn&p=1&ps=500 | time=22ms
+11:14:34.760 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3iGp-dOLLj47Yzx&p=1&ps=500 | time=36ms
+11:14:34.785 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWahALy516dvj2FCWI7b&p=1&ps=500 | time=23ms
+11:14:34.812 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3lAp-dOLLj47Y1k&p=1&ps=500 | time=26ms
+11:14:34.837 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWahALxp16dvj2FCWI61&p=1&ps=500 | time=23ms
+11:14:34.882 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ3q2p-dOLLj47Y8x&p=1&ps=500 | time=44ms
+11:14:34.918 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWahAL4C16dvj2FCWI8x&p=1&ps=500 | time=30ms
+11:14:34.951 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ32ep-dOLLj47ZMp&p=1&ps=500 | time=30ms
+11:14:34.981 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ4LXp-dOLLj47ZRc&p=1&ps=500 | time=27ms
+11:14:35.018 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ4Nup-dOLLj47ZUT&p=1&ps=500 | time=35ms
+11:14:35.060 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWYvQ4Rkp-dOLLj47ZYc&p=1&ps=500 | time=38ms
+11:14:35.080 INFO: Load active rules (done) | time=1037ms
+11:14:35.084 INFO: Load metrics repository
+11:14:35.111 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/metrics/search?f=name,description,direction,qualitative,custom&ps=500&p=1 | time=26ms
+11:14:35.127 INFO: Load metrics repository (done) | time=43ms
+11:14:35.165 INFO: Project key: testcomp.myAPP.sql
+11:14:35.165 DEBUG: Start recursive analysis of project modules
+11:14:35.166 INFO: -------------  Scan TTT_myAPP_SQL_UTPLSQL_CHECK
+11:14:35.408 INFO: Load server rules
+11:14:35.489 DEBUG: GET 200 http://sonar-testcomp.net.url.com/api/rules/list.protobuf | time=80ms
+11:14:35.508 INFO: Load server rules (done) | time=99ms
+11:14:35.562 INFO: Base dir: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK
+11:14:35.562 INFO: Working dir: D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\.scannerwork
+11:14:35.564 INFO: Source paths: src/myAPP/packages
+11:14:35.564 INFO: Test paths: src/test
+11:14:35.564 INFO: Source encoding: windows-1252, default locale: en_US
+11:14:35.687 WARN: Property 'sonar.abap.file.suffixes' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+11:14:35.691 DEBUG: Declared extensions of language CSS were converted to sonar.lang.patterns.css : **/*.css
+11:14:35.691 DEBUG: Declared extensions of language SCSS were converted to sonar.lang.patterns.scss : **/*.scss
+11:14:35.692 DEBUG: Declared extensions of language Less were converted to sonar.lang.patterns.less : **/*.less
+11:14:35.692 DEBUG: Declared extensions of language JSON were converted to sonar.lang.patterns.json : **/*.json
+11:14:35.692 DEBUG: Declared extensions of language PL/SQL were converted to sonar.lang.patterns.plsql : **/*.sql,**/*.tab,**/*.tps,**/*.pks,**/*.pkb,**/*.tpb,**/*.prc,**/*.fnc
+11:14:35.693 DEBUG: Declared extensions of language Java Properties were converted to sonar.lang.patterns.jproperties : **/*.properties
+11:14:35.693 DEBUG: Declared extensions of language C# were converted to sonar.lang.patterns.cs : **/*.cs
+11:14:35.693 DEBUG: Declared extensions of language Java were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+11:14:35.694 DEBUG: Declared extensions of language HTML were converted to sonar.lang.patterns.web : **/*.html,**/*.xhtml,**/*.rhtml,**/*.shtml
+11:14:35.694 DEBUG: Declared extensions of language Flex were converted to sonar.lang.patterns.flex : **/*.as
+11:14:35.695 DEBUG: Declared extensions of language XML were converted to sonar.lang.patterns.xml : **/*.xml,**/*.xsd,**/*.xsl
+11:14:35.695 DEBUG: Declared extensions of language TypeScript were converted to sonar.lang.patterns.ts : **/*.ts,**/*.tsx
+11:14:35.695 DEBUG: Declared extensions of language Visual Basic .NET were converted to sonar.lang.patterns.vbnet : **/*.vb
+11:14:35.696 DEBUG: Declared extensions of language Swift were converted to sonar.lang.patterns.swift : **/*.swift
+11:14:35.696 DEBUG: Declared extensions of language Neutral were converted to sonar.lang.patterns.neutral : 
+11:14:35.696 DEBUG: Declared extensions of language C were converted to sonar.lang.patterns.c : **/*.c,**/*.h
+11:14:35.697 DEBUG: Declared extensions of language C++ were converted to sonar.lang.patterns.cpp : **/*.cc,**/*.cpp,**/*.cxx,**/*.c++,**/*.hh,**/*.hpp,**/*.hxx,**/*.h++,**/*.ipp
+11:14:35.697 DEBUG: Declared extensions of language Objective-C were converted to sonar.lang.patterns.objc : **/*.m
+11:14:35.698 DEBUG: Declared extensions of language Python were converted to sonar.lang.patterns.py : **/*.py
+11:14:35.698 DEBUG: Declared extensions of language Kotlin were converted to sonar.lang.patterns.kotlin : **/*.kt,**/*.kts
+11:14:35.698 DEBUG: Declared extensions of language RPG were converted to sonar.lang.patterns.rpg : **/*.rpg,**/*.rpgle,**/*.rpg,**/*.rpgle
+11:14:35.699 DEBUG: Declared extensions of language PL/I were converted to sonar.lang.patterns.pli : **/*.pli
+11:14:35.699 DEBUG: Declared extensions of language T-SQL were converted to sonar.lang.patterns.tsql : **/*.tsql
+11:14:35.699 DEBUG: Declared extensions of language Vb were converted to sonar.lang.patterns.vb : **/*.vb,**/*.bas,**/*.frm,**/*.ctl,**/*.vb,**/*.bas,**/*.frm,**/*.ctl
+11:14:35.700 DEBUG: Declared extensions of language JavaScript were converted to sonar.lang.patterns.js : **/*.js,**/*.jsx,**/*.vue
+11:14:35.700 DEBUG: Declared extensions of language COBOL were converted to sonar.lang.patterns.cobol : 
+11:14:35.700 DEBUG: Declared extensions of language PHP were converted to sonar.lang.patterns.php : **/*.php,**/*.php3,**/*.php4,**/*.php5,**/*.phtml,**/*.inc
+11:14:35.701 DEBUG: Declared extensions of language ABAP were converted to sonar.lang.patterns.abap : **/*.abap,**/*.ab4,**/*.flow,**/*.asprog
+11:14:35.701 INFO: Language is forced to plsql
+11:14:35.715 DEBUG: Initializers : 
+11:14:35.716 INFO: Index files
+11:14:35.719 INFO: Excluded sources: 
+11:14:35.720 INFO:   **/classes/**/*
+11:14:35.720 INFO:   **/build/**/*
+11:14:35.720 INFO:   **/preview-ext-theme-*.css
+11:14:35.721 INFO:   **/*.arch-internal-preview.css
+11:14:35.731 WARN: File 'D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\src\myAPP\packages\myAPP.Clover.SQL-1.10.28.zip' is ignored because it doesn't belong to the forced language 'plsql'
+11:14:35.740 DEBUG: 'src\myAPP\packages\pk_myAPP_gui.bdy.sql' indexed with language 'plsql'
+11:14:35.741 DEBUG: 'src\myAPP\packages\pk_myAPP_gui.spc.sql' indexed with language 'plsql'
+11:14:35.742 DEBUG: 'src\myAPP\packages\pk_myAPP_housekeeping.spc.sql' indexed with language 'plsql'
+11:14:35.744 DEBUG: 'src\myAPP\packages\pk_myAPP_tools.spc.sql' indexed with language 'plsql'
+11:14:35.745 DEBUG: 'src\myAPP\packages\pk_myAPP_tools.bdy.sql' indexed with language 'plsql'
+11:14:35.746 DEBUG: 'src\myAPP\packages\pk_myAPP_utils.bdy.sql' indexed with language 'plsql'
+11:14:35.747 DEBUG: 'src\myAPP\packages\pk_myAPP_utils.spc.sql' indexed with language 'plsql'
+11:14:35.748 DEBUG: 'src\test\resources\TEST_F_myAPP_VALIDATOR.bdy.sql' indexed as test with language 'plsql'
+11:14:35.749 DEBUG: 'src\test\resources\TEST_F_myAPP_VALIDATOR.spc.sql' indexed as test with language 'plsql'
+11:14:35.750 DEBUG: 'src\test\resources\test_pk_myAPP_utils.bdy.sql' indexed as test with language 'plsql'
+11:14:35.752 DEBUG: 'src\test\resources\tst_ext_ref_case.bdy.sql' indexed as test with language 'plsql'
+11:14:35.754 DEBUG: 'src\test\resources\tst_ext_ref_case.spc.sql' indexed as test with language 'plsql'
+11:14:35.755 DEBUG: 'src\test\resources\test_pk_myAPP_utils.spc.sql' indexed as test with language 'plsql'
+11:14:35.756 DEBUG: 'src\test\resources\TST_UTPLSQL_CASES.pkb.sql' indexed as test with language 'plsql'
+11:14:35.757 DEBUG: 'src\myAPP\packages\pk_myAPP_housekeeping.bdy.sql' indexed with language 'plsql'
+11:14:35.758 DEBUG: 'src\test\resources\TST_UTPLSQL_CASES.pks.sql' indexed as test with language 'plsql'
+11:14:35.759 INFO: 16 files indexed
+11:14:35.759 INFO: 0 files ignored because of inclusion/exclusion patterns
+11:14:35.760 INFO: Quality profile for plsql: Sonar way
+11:14:39.361 DEBUG: 'CoberturaSensor' skipped because there is no related file in current project
+11:14:39.361 DEBUG: 'CSS Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.362 DEBUG: 'SCSS Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.362 DEBUG: 'Less Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.362 DEBUG: 'JSON Squid Sensor' skipped because there is no related file in current project
+11:14:39.362 DEBUG: 'Ansible Lint Sensor' skipped because there is no related file in current project
+11:14:39.363 DEBUG: 'Java Properties Squid Sensor' skipped because there is no related file in current project
+11:14:39.363 DEBUG: 'C#' skipped because there is no related file in current project
+11:14:39.363 DEBUG: 'C# Properties' skipped because there is no related file in current project
+11:14:39.364 DEBUG: 'C# Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.364 DEBUG: '[Deprecated] C# Integration Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.365 DEBUG: 'C# Unit Test Results Import' skipped because there is no related file in current project
+11:14:39.366 DEBUG: 'Import of Checkstyle issues' skipped because there is no related file in current project
+11:14:39.366 DEBUG: 'Import of PMD issues' skipped because one of the required properties is missing
+11:14:39.367 DEBUG: 'Import of SpotBugs issues' skipped because there is no related file in current project
+11:14:39.367 DEBUG: 'SurefireSensor' skipped because there is no related file in current project
+11:14:39.367 DEBUG: 'JaCoCoSensor' skipped because there is no related file in current project
+11:14:39.368 DEBUG: 'JavaSquidSensor' skipped because there is no related file in current project
+11:14:39.368 DEBUG: 'Flex' skipped because there is no related file in current project
+11:14:39.369 DEBUG: 'Flex Cobertura' skipped because there is no related file in current project
+11:14:39.369 DEBUG: 'XML Sensor' skipped because there is no related file in current project
+11:14:39.369 DEBUG: 'SonarTS' skipped because there is no related file in current project
+11:14:39.370 DEBUG: 'SonarTS Coverage' skipped because there is no related file in current project
+11:14:39.370 DEBUG: 'Import of TSLint issues' skipped because one of the required properties is missing
+11:14:39.371 DEBUG: 'Ansible-Lint Sensor with Extra Rules' skipped because there is no related file in current project
+11:14:39.371 DEBUG: 'VB.NET' skipped because there is no related file in current project
+11:14:39.371 DEBUG: 'VB.NET Properties' skipped because there is no related file in current project
+11:14:39.372 DEBUG: 'Visual Basic .NET Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.372 DEBUG: '[Deprecated] Visual Basic .NET Integration Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.373 DEBUG: 'Visual Basic .NET Unit Test Results Import' skipped because there is no related file in current project
+11:14:39.373 DEBUG: 'SonarSwift' skipped because there is no related file in current project
+11:14:39.374 DEBUG: 'CFamily' skipped because there is no related file in current project
+11:14:39.374 DEBUG: 'CFamily' skipped because there is no related file in current project
+11:14:39.375 DEBUG: 'gcov' skipped because there is no related file in current project
+11:14:39.375 DEBUG: 'llvm-cov' skipped because there is no related file in current project
+11:14:39.375 DEBUG: 'cppunit' skipped because there is no related file in current project
+11:14:39.376 DEBUG: 'VisualStudioCoverage' skipped because there is no related file in current project
+11:14:39.376 DEBUG: 'bullseye' skipped because there is no related file in current project
+11:14:39.376 DEBUG: 'Python Squid Sensor' skipped because there is no related file in current project
+11:14:39.376 DEBUG: 'PylintSensor' skipped because there is no related file in current project
+11:14:39.377 DEBUG: 'PylintImportSensor' skipped because there is no related file in current project
+11:14:39.377 DEBUG: 'PythonXUnitSensor' skipped because there is no related file in current project
+11:14:39.377 DEBUG: 'DetektSensor' skipped because there is no related file in current project
+11:14:39.377 DEBUG: 'KotlinJaCoCoSensor' skipped because there is no related file in current project
+11:14:39.377 DEBUG: 'KotlinSurefireSensor' skipped because there is no related file in current project
+11:14:39.378 DEBUG: 'RPG sensor' skipped because there is no related file in current project
+11:14:39.378 DEBUG: 'PliSquidSensor' skipped because there is no related file in current project
+11:14:39.378 DEBUG: 'T-SQL Sensor' skipped because there is no related file in current project
+11:14:39.379 DEBUG: 'VbSquidSensor' skipped because there is no related file in current project
+11:14:39.379 DEBUG: 'SonarJS' skipped because there is no related file in current project
+11:14:39.379 DEBUG: 'SonarJS Coverage' skipped because there is no related file in current project
+11:14:39.380 DEBUG: 'Import of ESLint issues' skipped because one of the required properties is missing
+11:14:39.380 DEBUG: 'ESLint-based SonarJS' skipped because there is no related file in current project
+11:14:39.380 DEBUG: 'CobolSquidSensor' skipped because there is no related file in current project
+11:14:39.381 DEBUG: 'PHP sensor' skipped because there is no related file in current project
+11:14:39.381 DEBUG: 'Analyzer for "php.ini" files' skipped because there is no related file in current project
+11:14:39.381 DEBUG: 'AbapSquidSensor' skipped because there is no related file in current project
+11:14:39.385 DEBUG: 'CoberturaSensor' skipped because there is no related file in current project
+11:14:39.385 DEBUG: 'CSS Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.385 DEBUG: 'SCSS Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.385 DEBUG: 'Less Analyzer Sensor' skipped because there is no related file in current project
+11:14:39.386 DEBUG: 'JSON Squid Sensor' skipped because there is no related file in current project
+11:14:39.386 DEBUG: 'Ansible Lint Sensor' skipped because there is no related file in current project
+11:14:39.386 DEBUG: 'Java Properties Squid Sensor' skipped because there is no related file in current project
+11:14:39.386 DEBUG: 'C#' skipped because there is no related file in current project
+11:14:39.386 DEBUG: 'C# Properties' skipped because there is no related file in current project
+11:14:39.387 DEBUG: 'C# Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.387 DEBUG: '[Deprecated] C# Integration Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.387 DEBUG: 'C# Unit Test Results Import' skipped because there is no related file in current project
+11:14:39.387 DEBUG: 'Import of Checkstyle issues' skipped because there is no related file in current project
+11:14:39.387 DEBUG: 'Import of PMD issues' skipped because one of the required properties is missing
+11:14:39.388 DEBUG: 'Import of SpotBugs issues' skipped because there is no related file in current project
+11:14:39.388 DEBUG: 'SurefireSensor' skipped because there is no related file in current project
+11:14:39.388 DEBUG: 'JaCoCoSensor' skipped because there is no related file in current project
+11:14:39.388 DEBUG: 'JavaSquidSensor' skipped because there is no related file in current project
+11:14:39.388 DEBUG: 'Flex' skipped because there is no related file in current project
+11:14:39.389 DEBUG: 'Flex Cobertura' skipped because there is no related file in current project
+11:14:39.389 DEBUG: 'XML Sensor' skipped because there is no related file in current project
+11:14:39.389 DEBUG: 'SonarTS' skipped because there is no related file in current project
+11:14:39.389 DEBUG: 'SonarTS Coverage' skipped because there is no related file in current project
+11:14:39.389 DEBUG: 'Import of TSLint issues' skipped because one of the required properties is missing
+11:14:39.389 DEBUG: 'Ansible-Lint Sensor with Extra Rules' skipped because there is no related file in current project
+11:14:39.390 DEBUG: 'VB.NET' skipped because there is no related file in current project
+11:14:39.390 DEBUG: 'VB.NET Properties' skipped because there is no related file in current project
+11:14:39.390 DEBUG: 'Visual Basic .NET Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.390 DEBUG: '[Deprecated] Visual Basic .NET Integration Tests Coverage Report Import' skipped because there is no related file in current project
+11:14:39.390 DEBUG: 'Visual Basic .NET Unit Test Results Import' skipped because there is no related file in current project
+11:14:39.390 DEBUG: 'SonarSwift' skipped because there is no related file in current project
+11:14:39.391 DEBUG: 'CFamily' skipped because there is no related file in current project
+11:14:39.391 DEBUG: 'CFamily' skipped because there is no related file in current project
+11:14:39.391 DEBUG: 'gcov' skipped because there is no related file in current project
+11:14:39.391 DEBUG: 'llvm-cov' skipped because there is no related file in current project
+11:14:39.392 DEBUG: 'cppunit' skipped because there is no related file in current project
+11:14:39.392 DEBUG: 'VisualStudioCoverage' skipped because there is no related file in current project
+11:14:39.392 DEBUG: 'bullseye' skipped because there is no related file in current project
+11:14:39.392 DEBUG: 'Python Squid Sensor' skipped because there is no related file in current project
+11:14:39.393 DEBUG: 'PylintSensor' skipped because there is no related file in current project
+11:14:39.393 DEBUG: 'PylintImportSensor' skipped because there is no related file in current project
+11:14:39.393 DEBUG: 'PythonXUnitSensor' skipped because there is no related file in current project
+11:14:39.393 DEBUG: 'DetektSensor' skipped because there is no related file in current project
+11:14:39.393 DEBUG: 'KotlinJaCoCoSensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'KotlinSurefireSensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'RPG sensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'PliSquidSensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'T-SQL Sensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'VbSquidSensor' skipped because there is no related file in current project
+11:14:39.394 DEBUG: 'SonarJS' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'SonarJS Coverage' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'Import of ESLint issues' skipped because one of the required properties is missing
+11:14:39.395 DEBUG: 'ESLint-based SonarJS' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'CobolSquidSensor' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'PHP sensor' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'Analyzer for "php.ini" files' skipped because there is no related file in current project
+11:14:39.395 DEBUG: 'AbapSquidSensor' skipped because there is no related file in current project
+11:14:39.400 DEBUG: Sensors : MantisSensor -> Generic Coverage Report -> Generic Test Executions Report -> Embedded CSS Analyzer Sensor -> PL/SQL Sensor -> SonarJavaXmlFileSensor -> HTML -> Dependency-Check -> Zero Coverage Sensor -> CPD Block Indexer
+11:14:39.400 INFO: Sensor MantisSensor [mantis]
+11:14:39.407 WARN: The server url, the project name, the filter name, the username and the password must not be empty.
+11:14:39.407 INFO: Sensor MantisSensor [mantis] (done) | time=7ms
+11:14:39.407 INFO: Sensor Generic Coverage Report
+11:14:39.407 WARN: Property 'sonar.coverageReportPaths' is not declared as multi-values/property set but was read using 'getStringArray' method. The SonarQube plugin declaring this property should be updated.
+11:14:39.409 INFO: Parsing D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\coverage-sonar-reporter.xml
+11:14:39.469 INFO: Imported coverage data for 0 files
+11:14:39.469 INFO: Sensor Generic Coverage Report (done) | time=62ms
+11:14:39.469 INFO: Sensor Generic Test Executions Report
+11:14:39.469 WARN: Property 'sonar.genericcoverage.unitTestReportPaths' is deprecated. Please use 'sonar.testExecutionReportPaths' instead.
+11:14:39.470 INFO: Parsing D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\target\utplsql\sonar-test-reporter.xml
+11:14:39.474 INFO: Imported test execution data for 0 files
+11:14:39.474 INFO: Test execution data ignored for 7 unknown files, including:
+all.globaltests.test_p_myAPP_launchpivot
+all.globaltests.test_p_status_update
+all.globaltests.test_p_status_upd_ack
+test_f_client_ack_checker
+test_f_myAPP_validator
+11:14:39.474 INFO: Sensor Generic Test Executions Report (done) | time=5ms
+11:14:39.474 INFO: Sensor Embedded CSS Analyzer Sensor [css]
+11:14:39.530 INFO: 0 source files to be analyzed
+11:14:39.532 INFO: Sensor Embedded CSS Analyzer Sensor [css] (done) | time=58ms
+11:14:39.532 INFO: 0/0 source files have been analyzed
+11:14:39.532 INFO: Sensor PL/SQL Sensor [plsql]
+11:14:39.591 INFO: 8 source files to be analyzed
+11:14:39.603 INFO: 'src/myAPP/packages/pk_myAPP_gui.bdy.sql' generating issue exclusions
+11:14:39.646 DEBUG: 'src/myAPP/packages/pk_myAPP_gui.bdy.sql' generated metadata  with charset 'windows-1252'
+11:14:40.412 INFO: 'src/myAPP/packages/pk_myAPP_gui.spc.sql' generating issue exclusions
+11:14:40.414 DEBUG: 'src/myAPP/packages/pk_myAPP_gui.spc.sql' generated metadata  with charset 'windows-1252'
+11:14:40.430 DEBUG: Not enough content in 'src/myAPP/packages/pk_myAPP_gui.spc.sql' to have CPD blocks, it will not be part of the duplication detection
+11:14:40.477 INFO: 'src/myAPP/packages/pk_myAPP_housekeeping.bdy.sql' generating issue exclusions
+11:14:40.479 DEBUG: 'src/myAPP/packages/pk_myAPP_housekeeping.bdy.sql' generated metadata  with charset 'windows-1252'
+11:14:40.537 INFO: 'src/myAPP/packages/pk_myAPP_housekeeping.spc.sql' generating issue exclusions
+11:14:40.538 DEBUG: 'src/myAPP/packages/pk_myAPP_housekeeping.spc.sql' generated metadata  with charset 'windows-1252'
+11:14:40.541 DEBUG: Not enough content in 'src/myAPP/packages/pk_myAPP_housekeeping.spc.sql' to have CPD blocks, it will not be part of the duplication detection
+11:14:40.548 INFO: 'src/myAPP/packages/pk_myAPP_tools.bdy.sql' generating issue exclusions
+11:14:40.549 DEBUG: 'src/myAPP/packages/pk_myAPP_tools.bdy.sql' generated metadata  with charset 'windows-1252'
+11:14:40.575 INFO: 'src/myAPP/packages/pk_myAPP_tools.spc.sql' generating issue exclusions
+11:14:40.575 DEBUG: 'src/myAPP/packages/pk_myAPP_tools.spc.sql' generated metadata  with charset 'windows-1252'
+11:14:40.577 DEBUG: Not enough content in 'src/myAPP/packages/pk_myAPP_tools.spc.sql' to have CPD blocks, it will not be part of the duplication detection
+11:14:40.583 INFO: 'src/myAPP/packages/pk_myAPP_utils.bdy.sql' generating issue exclusions
+11:14:40.604 DEBUG: 'src/myAPP/packages/pk_myAPP_utils.bdy.sql' generated metadata  with charset 'windows-1252'
+11:14:42.284 INFO: 'src/myAPP/packages/pk_myAPP_utils.spc.sql' generating issue exclusions
+11:14:42.286 DEBUG: 'src/myAPP/packages/pk_myAPP_utils.spc.sql' generated metadata  with charset 'windows-1252'
+11:14:42.301 DEBUG: Not enough content in 'src/myAPP/packages/pk_myAPP_utils.spc.sql' to have CPD blocks, it will not be part of the duplication detection
+11:14:42.331 INFO: 8/8 source files have been analyzed
+11:14:42.331 INFO: Sensor PL/SQL Sensor [plsql] (done) | time=2799ms
+11:14:42.331 INFO: Sensor SonarJavaXmlFileSensor [java]
+11:14:42.332 INFO: Sensor SonarJavaXmlFileSensor [java] (done) | time=1ms
+11:14:42.332 INFO: Sensor HTML [web]
+11:14:42.348 INFO: Sensor HTML [web] (done) | time=15ms
+11:14:42.348 INFO: Sensor Dependency-Check [dependencycheck]
+11:14:42.348 INFO: Process Dependency-Check report
+11:14:42.350 INFO: Dependency-Check XML report does not exists. Please check property sonar.dependencyCheck.reportPath:D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\${WORKSPACE}\dependency-check-report.xml
+11:14:42.350 INFO: Analysis skipped/aborted due to missing report file
+11:14:42.352 DEBUG: XML-Dependency-Check report does not exist.
+java.io.FileNotFoundException: XML-Dependency-Check report does not exist.
+	at org.sonar.dependencycheck.report.XmlReportFile.getXmlReport(XmlReportFile.java:37)
+	at org.sonar.dependencycheck.DependencyCheckSensor.parseAnalysis(DependencyCheckSensor.java:202)
+	at org.sonar.dependencycheck.DependencyCheckSensor.execute(DependencyCheckSensor.java:248)
+	at org.sonar.scanner.sensor.SensorWrapper.analyse(SensorWrapper.java:53)
+	at org.sonar.scanner.phases.SensorsExecutor.executeSensor(SensorsExecutor.java:88)
+	at org.sonar.scanner.phases.SensorsExecutor.execute(SensorsExecutor.java:82)
+	at org.sonar.scanner.phases.SensorsExecutor.execute(SensorsExecutor.java:68)
+	at org.sonar.scanner.phases.AbstractPhaseExecutor.execute(AbstractPhaseExecutor.java:88)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:177)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:291)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:286)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:264)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.task.ScanTask.execute(ScanTask.java:48)
+	at org.sonar.scanner.task.TaskContainer.doAfterStart(TaskContainer.java:84)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.bootstrap.GlobalContainer.executeTask(GlobalContainer.java:121)
+	at org.sonar.batch.bootstrapper.Batch.doExecuteTask(Batch.java:116)
+	at org.sonar.batch.bootstrapper.Batch.executeTask(Batch.java:111)
+	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:233)
+	at org.sonarsource.scanner.api.EmbeddedScanner.runAnalysis(EmbeddedScanner.java:151)
+	at org.sonarsource.scanner.cli.Main.runAnalysis(Main.java:123)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:77)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+
+11:14:42.355 INFO: Dependency-Check HTML report does not exists. Please check property sonar.dependencyCheck.htmlReportPath:D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\${WORKSPACE}\dependency-check-report.html
+11:14:42.356 INFO: HTML-Dependency-Check report does not exist.
+11:14:42.356 DEBUG: HTML-Dependency-Check report does not exist.
+java.io.FileNotFoundException: HTML-Dependency-Check report does not exist.
+	at org.sonar.dependencycheck.report.HtmlReportFile.getHtmlReport(HtmlReportFile.java:37)
+	at org.sonar.dependencycheck.DependencyCheckSensor.saveMeasures(DependencyCheckSensor.java:221)
+	at org.sonar.dependencycheck.DependencyCheckSensor.execute(DependencyCheckSensor.java:259)
+	at org.sonar.scanner.sensor.SensorWrapper.analyse(SensorWrapper.java:53)
+	at org.sonar.scanner.phases.SensorsExecutor.executeSensor(SensorsExecutor.java:88)
+	at org.sonar.scanner.phases.SensorsExecutor.execute(SensorsExecutor.java:82)
+	at org.sonar.scanner.phases.SensorsExecutor.execute(SensorsExecutor.java:68)
+	at org.sonar.scanner.phases.AbstractPhaseExecutor.execute(AbstractPhaseExecutor.java:88)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:177)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:291)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:286)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:264)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.task.ScanTask.execute(ScanTask.java:48)
+	at org.sonar.scanner.task.TaskContainer.doAfterStart(TaskContainer.java:84)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:121)
+	at org.sonar.scanner.bootstrap.GlobalContainer.executeTask(GlobalContainer.java:121)
+	at org.sonar.batch.bootstrapper.Batch.doExecuteTask(Batch.java:116)
+	at org.sonar.batch.bootstrapper.Batch.executeTask(Batch.java:111)
+	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:233)
+	at org.sonarsource.scanner.api.EmbeddedScanner.runAnalysis(EmbeddedScanner.java:151)
+	at org.sonarsource.scanner.cli.Main.runAnalysis(Main.java:123)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:77)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+
+11:14:42.356 INFO: Process Dependency-Check report (done) | time=8ms
+11:14:42.357 INFO: Sensor Dependency-Check [dependencycheck] (done) | time=9ms
+11:14:42.357 INFO: Sensor Zero Coverage Sensor
+11:14:42.394 INFO: Sensor Zero Coverage Sensor (done) | time=36ms
+11:14:42.394 INFO: Sensor CPD Block Indexer
+11:14:42.394 DEBUG: org.sonar.scanner.cpd.deprecated.DefaultCpdBlockIndexer is used for plsql
+11:14:42.395 DEBUG: No CpdMapping for language plsql
+11:14:42.395 INFO: Sensor CPD Block Indexer (done) | time=1ms
+11:14:42.404 INFO: 'src/test/resources/TEST_F_myAPP_VALIDATOR.bdy.sql' generating issue exclusions
+11:14:42.405 DEBUG: 'src/test/resources/TEST_F_myAPP_VALIDATOR.bdy.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.405 INFO: 'src/test/resources/TEST_F_myAPP_VALIDATOR.spc.sql' generating issue exclusions
+11:14:42.406 DEBUG: 'src/test/resources/TEST_F_myAPP_VALIDATOR.spc.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.407 INFO: 'src/test/resources/TST_UTPLSQL_CASES.pkb.sql' generating issue exclusions
+11:14:42.407 DEBUG: 'src/test/resources/TST_UTPLSQL_CASES.pkb.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.408 INFO: 'src/test/resources/TST_UTPLSQL_CASES.pks.sql' generating issue exclusions
+11:14:42.408 DEBUG: 'src/test/resources/TST_UTPLSQL_CASES.pks.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.409 INFO: 'src/test/resources/test_pk_myAPP_utils.bdy.sql' generating issue exclusions
+11:14:42.410 DEBUG: 'src/test/resources/test_pk_myAPP_utils.bdy.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.411 INFO: 'src/test/resources/test_pk_myAPP_utils.spc.sql' generating issue exclusions
+11:14:42.411 DEBUG: 'src/test/resources/test_pk_myAPP_utils.spc.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.412 INFO: 'src/test/resources/tst_ext_ref_case.bdy.sql' generating issue exclusions
+11:14:42.414 DEBUG: 'src/test/resources/tst_ext_ref_case.bdy.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.415 INFO: 'src/test/resources/tst_ext_ref_case.spc.sql' generating issue exclusions
+11:14:42.415 DEBUG: 'src/test/resources/tst_ext_ref_case.spc.sql' generated metadata as test  with charset 'windows-1252'
+11:14:42.429 INFO: 4 files had no CPD blocks
+11:14:42.429 INFO: Calculating CPD for 4 files
+11:14:42.431 DEBUG: Detection of duplications for D:/apps/jenkins/slave-prd-05/workspace/TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK/src/myAPP/packages/pk_myAPP_housekeeping.bdy.sql
+11:14:42.500 DEBUG: Detection of duplications for D:/apps/jenkins/slave-prd-05/workspace/TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK/src/myAPP/packages/pk_myAPP_utils.bdy.sql
+11:14:42.541 DEBUG: Detection of duplications for D:/apps/jenkins/slave-prd-05/workspace/TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK/src/myAPP/packages/pk_myAPP_tools.bdy.sql
+11:14:42.544 DEBUG: Detection of duplications for D:/apps/jenkins/slave-prd-05/workspace/TTT/myAPP/TTT_myAPP_SQL_UTPLSQL_CHECK/src/myAPP/packages/pk_myAPP_gui.bdy.sql
+11:14:42.559 INFO: CPD calculation finished
+11:14:43.120 INFO: Analysis report generated in 558ms, dir size=864 KB
+11:14:43.208 INFO: Analysis reports compressed in 88ms, zip size=192 KB
+11:14:43.209 INFO: Analysis report generated in D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\.scannerwork\scanner-report
+11:14:43.209 DEBUG: Upload report
+11:14:43.275 DEBUG: POST 200 http://sonar-testcomp.net.url.com/api/ce/submit?projectKey=testcomp.myAPP.sql&projectName=TTT_myAPP_SQL_UTPLSQL_CHECK | time=64ms
+11:14:43.277 INFO: Analysis report uploaded in 67ms
+11:14:43.279 INFO: ANALYSIS SUCCESSFUL, you can browse http://sonar-testcomp.net.url.com/dashboard/index/testcomp.myAPP.sql
+11:14:43.279 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+11:14:43.279 INFO: More about the report processing at http://sonar-testcomp.net.url.com/api/ce/task?id=AW6sWx8ntZeYkI1HRE1C
+11:14:43.280 DEBUG: Report metadata written to D:\apps\jenkins\slave-prd-05\workspace\TTT\myAPP\TTT_myAPP_SQL_UTPLSQL_CHECK\.scannerwork\report-task.txt
+11:14:43.282 DEBUG: IssuesSeverityBreaker is disabled (sonar.analysis.mode == publish)
+11:14:43.282 DEBUG: QualityGateBreaker is disabled (sonar.buildbreaker.skip = true)
+11:14:43.282 DEBUG: Post-jobs : 
+11:14:43.289 INFO: Task tomyAPP time: 10.348 s
+11:14:43.289 INFO: ------------------------------------------------------------------------
+11:14:43.289 INFO: EXECUTION SUCCESS
+11:14:43.289 INFO: ------------------------------------------------------------------------
+11:14:43.289 INFO: TomyAPP time: 12.277s
+11:14:43.473 INFO: Final Memory: 75M/772M
+11:14:43.474 INFO: ------------------------------------------------------------------------
+11:14:43.474 DEBUG: Execution getVersion
+11:14:43.476 DEBUG: Execution stop
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS
